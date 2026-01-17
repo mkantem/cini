@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gemspec
 
-ruby "3.3.4"
-gem "bigdecimal"
-gem "rake", "12.3.3"
+gem "jekyll", "~> 4.4" 
+gem "jekyll-remote-theme"
+gem "jekyll-include-cache", group: :jekyll_plugins
 

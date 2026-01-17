@@ -5,8 +5,11 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cini.ml" # the base hostname & protocol for your site, e.g. https://example.com
 
-theme: jekyll-theme-conference
+remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v3.6.3"
 
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
 # Build settings
 markdown: kramdown
 sass:
@@ -60,7 +63,7 @@ conference:
   tz: "+00:00"
 
   # Show theme errors:
-  show_errors: True
+  show_errors: False
 
   # Navigation bar
   navigation:
