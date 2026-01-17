@@ -68,7 +68,7 @@ conference:
   # Navigation bar
   navigation:
     logo:
-      name: Revue RASP
+      name: RASP
      # img: 'bhb.png'
       url: 'https://revue-rasp.org/'
     breakpoint: md
