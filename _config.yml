@@ -128,13 +128,18 @@ conference:
     text: 
       Formateur chevronné, toujours disponible et sans relâche éclairant, N. Kanté a marqué plusieurs générations d’étudiants qui, pour le plus grand nombre d’entre eux, firent leurs preuves. 
       
-      C’est aussi à l’enseignant exigeant et bienveillant que ce colloque a rendu hommage. 
+      C’est aussi à l’enseignant exigeant et bienveillant que ce colloque rend hommage!
+    
+  - text: La soumission se fait exclusivement en ligne via la plateforme Microsoft CMT.
+    color: info
+    main_only: true 
 
-      Voir [Revue RASP](https://revue-rasp.org/)!
+  - text: Submissions are made exclusively online via the Microsoft CMT platform.
+    color: info
+    main_only: true
   - text: L’objectif, à terme, est de faire du CINI un lieu international d’excellence scientifique, alliant rigueur et pérennisation de l’héritage de Nianguiry.
     color: warning
     pages_only: true
-
   # Live indications
   live:
     date: 09.09.2026
