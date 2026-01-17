@@ -1,0 +1,78 @@
+{
+    "days": [
+        {
+            "name": "Samedi",
+            "hash": "sam",
+            "date": "2020-01-31"
+        }
+    ],
+
+    "rooms": {
+    },
+
+    "speakers": {
+        "Alassane Sow" : {
+            "name": "Alassane Sow",
+            "href": "/past-years/2022/speakers/alassane-sow/"
+        },
+        "Anoua Adou Serge Judicaël" : {
+            "name": "Anoua Adou Serge Judicaël",
+            "href": "/past-years/2022/speakers/anoua/"
+        },
+        "Baba Coulibaly" : {
+            "name": "Baba Coulibaly",
+            "href": "/past-years/2022/speakers/baba-coulibaly/"
+        },
+        "Bayogo Yapégué" : {
+            "name": "Bayogo Yapégué",
+            "href": "/past-years/2022/speakers/bayogo-yapegue/"
+        },
+        "Collaborateurs et ami(e)s" : {
+            "name": "Collaborateurs et ami(e)s",
+            "href": "/past-years/2022/speakers/collab/"
+        },
+        "Daniel Guikahué Bissou" : {
+            "name": "Daniel Guikahué Bissou",
+            "href": "/past-years/2022/speakers/daniel-bissou/"
+        },
+        "Drissa Samaké" : {
+            "name": "Drissa Samaké",
+            "href": "/past-years/2022/speakers/drissa-samake/"
+        },
+        "Anoua Ibrahima Diop Gaye" : {
+            "name": "Ibrahima Diop Gaye",
+            "href": "/past-years/2022/speakers/ibrahima-gaye/"
+        },
+        "Ibrahima Traoré" : {
+            "name": "Ibrahima Traoré",
+            "href": "/past-years/2022/speakers/ibrahima-traore/"
+        },
+        "Issa Ouattara" : {
+            "name": "Issa Ouattara",
+            "href": "/past-years/2022/speakers/issa-ouattara/"
+        },
+        "Mbella Mbong Rostant" : {
+            "name": "Mbella Mbong Rostant",
+            "href": "/past-years/2022/speakers/mbella-rostant/"
+        },
+        "Modibo Keita" : {
+            "name": "Modibo Keita",
+            "href": "/past-years/2022/speakers/modibo-keita/"
+        },
+        "Olivier Douville" : {
+            "name": "Olivier Douville",
+            "href": "/past-years/2022/speakers/olivier-douville/"
+        },
+        "Signo Kouamé" : {
+            "name": "Signo Kouamé Frédéric",
+            "href": "/past-years/2022/speakers/signo-kouame/"
+        },
+        "Soumaila Oulalé" : {
+            "name": "Soumaila Oulalé",
+            "href": "/past-years/2022/speakers/soumaila-oulale/"
+        }
+    },
+
+    "talks": {
+    }
+}

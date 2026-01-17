@@ -1,0 +1,203 @@
+{
+    "days": [
+        {
+            "name": "Mardi",
+            "hash": "ma",
+            "date": "2024-09-10"
+        },
+        {
+            "name": "Mercredi",
+            "hash": "me",
+            "date": "2024-09-11"
+        }
+    ],
+
+    "rooms": {
+    },
+
+    "speakers": {
+        "Agnoumba Sidibe" : {
+            "name": "Agnoumba Sidibe",
+            "href": "/past-years/2024/speakers/agnoumba-sidibe/"
+        },
+        "AISSI Jean-Roitinos" : {
+            "name": "AISSI Jean Roitinos",
+            "href": "/past-years/2024/speakers/aissi-jean-roitinos/"
+        },
+        "AKAFFOU Yao Saturnin Davy" : {
+            "name": "AKAFFOU Yao Saturnin Davy",
+            "href": "/past-years/2024/speakers/akaffou-yao-saturnin-davy/"
+        },
+        "AKE Affoué Hélène" : {
+            "name": "AKE Affoué Hélène",
+            "href": "/past-years/2024/speakers/ake-affoue-helene/"
+        },
+        "Alassane Sow" : {
+            "name": "Alassane Sow",
+            "href": "/past-years/2024/speakers/alassane-sow/"
+        },
+        "Amadou Traore" : {
+            "name": "Amadou Traore",
+            "href": "/past-years/2024/speakers/amadou-traore/"
+        },
+        "ANOUA Adou Serge Judicaël" : {
+            "name": "ANOUA Adou Serge Judicaël",
+            "href": "/past-years/2024/speakers/anoua/"
+        },
+        "Arsène BLÉ Kain" : {
+            "name": "Arsène BLÉ Kain",
+            "href": "/past-years/2024/speakers/arsene-ble-kain/"
+        },
+        "ATSE Achi Amédée-Pierre" : {
+            "name": "ATSE Achi Amédée-Pierre",
+            "href": "/past-years/2024/speakers/atse-achi-amedee-pierre/"
+        },
+        "Baba Coulibaly" : {
+            "name": "Baba Coulibaly",
+            "href": "/past-years/2024/speakers/baba-coulibaly/"
+        },
+        "BEHANZIN Gbèssohèlè Justin" : {
+            "name": "BEHANZIN Gbèssohèlè Justin",
+            "href": "/past-years/2024/speakers/behanzin-gbesohele-justin/"
+        },
+        "Birane Cisse" : {
+            "name": "Birane Cisse",
+            "href": "/past-years/2024/speakers/birane-cisse/"
+        },
+        "BOA Assemien" : {
+            "name": "BOA Assemien",
+            "href": "/past-years/2024/speakers/boa-assemien/"
+        },
+        "BOKOSSA Hervé Kouessivi Janvier" : {
+            "name": "BOKOSSA Hervé Kouessivi Janvier",
+            "href": "/past-years/2024/speakers/bokossa-herve-kouessivi-janvier/"
+        },
+        "Daniel Guikahué Bissou" : {
+            "name": "Daniel Guikahué Bissou",
+            "href": "/past-years/2024/speakers/daniel-bissou/"
+        },
+        "DOHOU Modeste" : {
+            "name": "DOHOU Modeste",
+            "href": "/past-years/2024/speakers/dohou-modeste/"
+        },
+        "Douanla Alix Michelle" : {
+            "name": "Douanla Alix Michelle",
+            "href": "/past-years/2024/speakers/douanla-alix-michelle/"
+        },
+        "Drissa Samaké" : {
+            "name": "Drissa Samaké",
+            "href": "/past-years/2024/speakers/drissa-samake/"
+        },
+        "GANLAKI TOMAVO Houénoudé Thierry Raoul" : {
+            "name": "GANLAKI TOMAVO Houénoudé Thierry Raoul",
+            "href": "/past-years/2024/speakers/ganlaki-tomavo-houenoude-thierry-raoul/"
+        },
+        "GOY-GOY Dapsia" : {
+            "name": "GOY-GOY Dapsia",
+            "href": "/past-years/2024/speakers/goy-goy-dapsia/"
+        },
+        "Ismaïla Famanta" : {
+            "name": "Ismaïla Famanta",
+            "href": "/past-years/2024/speakers/ismaila-famanta/"
+        },
+        "Issa Ouattara" : {
+            "name": "Issa Ouattara",
+            "href": "/past-years/2024/speakers/issa-ouattara/"
+        },
+        "KASSI Yao Germain" : {
+            "name": "KASSI Yao Germain",
+            "href": "/past-years/2024/speakers/kassi-yao-germain/"
+        },
+        "Khady Faye" : {
+            "name": "Khady Faye",
+            "href": "/past-years/2024/speakers/khady-faye/"
+        },
+        "KONATE Tessolo Ibrahim" : {
+            "name": "KONATE Tessolo Ibrahim",
+            "href": "/past-years/2024/speakers/konate-tessolo-ibrahim/"
+        },
+        "KONE Lego Adam" : {
+            "name": "KONE Lego Adam",
+            "href": "/past-years/2024/speakers/kone-lego-adam/"
+        },
+        "KONE Nochiami Affou" : {
+            "name": "KONE Nochiami Affou",
+            "href": "/past-years/2024/speakers/kone-nochiami-affou/"
+        },
+        "Kossi Eden Andrews Adandjesso" : {
+            "name": "Kossi Eden Andrews Adandjesso",
+            "href": "/past-years/2024/speakers/kossi-eden-andrews-adandjesso/"
+        },
+        "KOUASSI Kouakou Firmin" : {
+            "name": "KOUASSI Kouakou Firmin",
+            "href": "/past-years/2024/speakers/kouassi-kouakou-firmin/"
+        },
+        "KRA Kouamé Walter" : {
+            "name": "KRA Kouamé Walter",
+            "href": "/past-years/2024/speakers/kra-kouame-walter/"
+        },
+        "LÉMOUOGUÉ Joséphine" : {
+            "name": "LÉMOUOGUÉ Joséphine",
+            "href": "/past-years/2024/speakers/lemouogue-josephine/"
+        },
+        "Makan Soumare" : {
+            "name": "Makan Soumare",
+            "href": "/past-years/2024/speakers/makan-soumare/"
+        },
+        "Mamadou Aguibou Diallo" : {
+            "name": "Mamadou Aguibou Diallo",
+            "href": "/past-years/2024/speakers/mamadou-aguibou-diallo/"
+        },
+        "Mamadou Sounoussy Diallo" : {
+            "name": "Mamadou Sounoussy Diallo",
+            "href": "/past-years/2024/speakers/mamadou-sounoussy-diallo/"
+        },
+        "MANAN Gnamien Elie" : {
+            "name": "MANAN Gnamien Elie",
+            "href": "/past-years/2024/speakers/manan-gnamien-elie/"
+        },
+        "Mbagnick Diop" : {
+            "name": "Mbagnick Diop",
+            "href": "/past-years/2024/speakers/mbagnick-diop/"
+        },
+        "Modibo Keita" : {
+            "name": "Modibo Keita",
+            "href": "/past-years/2024/speakers/modibo-keita/"
+        },
+        "Mohamed Boubacar Bilcha" : {
+            "name": "Mohamed Boubacar Bilcha",
+            "href": "/past-years/2024/speakers/mohamed-boubacar-bilcha/"
+        },
+        "Olivier Douville" : {
+            "name": "Olivier Douville",
+            "href": "/past-years/2024/speakers/olivier-douville/"
+        },
+        "OUATTARA Zié Adama" : {
+            "name": "OUATTARA Zié Adama",
+            "href": "/past-years/2024/speakers/ouattara-zie-adama/"
+        },
+        "SAIDI Bouchra" : {
+            "name": "SAIDI Bouchra",
+            "href": "/past-years/2024/speakers/saidi-bouchra/"
+        },
+        "Soumaïla Oulale" : {
+            "name": "Soumaïla Oulale",
+            "href": "/past-years/2024/speakers/soumaila-oulale/"
+        },
+        "YAO N'Guessan Louis Franck" : {
+            "name": "YAO N'Guessan Louis Franck",
+            "href": "/past-years/2024/speakers/yao-nguessan-louis-franck/"
+        },
+        "Yaya Guindo" : {
+            "name": "Yaya Guindo",
+            "href": "/past-years/2024/speakers/yaya-guindo/"
+        },
+        "Yaya Traore" : {
+            "name": "Yaya Traore",
+            "href": "/past-years/2024/speakers/yaya-traore/"
+        }
+    },
+
+    "talks": {
+    }
+}

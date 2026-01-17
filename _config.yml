@@ -1,0 +1,200 @@
+title: CINI 2026
+preposition: at
+description: >-
+  Colloque International Nianguiry KANTE 2026, troisième édition
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cini.ml" # the base hostname & protocol for your site, e.g. https://example.com
+
+theme: jekyll-theme-conference
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+
+# Additional exclude from processing
+exclude:
+  - vendor
+  - .github/
+  - README.md
+  - LICENSE.md
+  - REDISTRIBUTED.md
+  - purgecss.config.js
+
+# Collections and their defaults
+collections:
+  talks:
+    output: true
+    permalink: /:collection/:title/
+  speakers:
+    output: true
+    permalink: /:collection/:title/
+  rooms:
+    output: true
+    permalink: /:collection/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker
+  - scope:
+      path: ""
+      type: rooms
+    values:
+      layout: room
+
+
+conference:
+
+  # Language
+  lang: fr
+
+  # Timezone
+  tz: "+00:00"
+
+  # Show theme errors:
+  show_errors: True
+
+  # Navigation bar
+  navigation:
+    logo:
+      name: Revue RASP
+     # img: 'bhb.png'
+      url: 'https://revue-rasp.org/'
+    breakpoint: md
+    links:
+    #  - name: Programme
+    #    relative_url: /program/
+      - name: Appel (CFP)
+        relative_url: /talks/downloads/
+     # - name: Talks
+     #   relative_url: /talks/
+      - name: Dates
+        relative_url: /pages/dates/
+      - name: Comité
+        menu:
+          - name: Comité scientifique
+            relative_url: /pages/comite-scientifique/
+          - name: Comité d'organisation
+            relative_url: /pages/comite-organisation/
+          - name: Secrétariat
+            relative_url: /pages/secretariat/
+      - name: Soumission
+        relative_url: /pages/soumission/
+      - name: Lieu
+        relative_url: /location/
+      - name: Edition précédente
+        menu:
+          - name: 2026 (current)
+            disabled: true
+          - name: 2024 
+            relative_url: /past-years/2024/
+          - name: 2022
+            relative_url: /past-years/2022/
+
+  # Link Preview for Sharing
+  link_preview:
+    # also adapt "preposition" property at top for more meaningful descriptions
+    disable: false
+    img:
+      twitter: 'logo2026.png'      # inside /assets/images/
+      open_graph: 'logo2026.png'  # inside /assets/images/
+
+  # Main landing page
+  main:
+    logo:
+       img: 'logo2026.png'
+    links:
+      - name: Programme
+        relative_url: /program/
+      - name: Lieu
+        relative_url: /location/
+      - name: Downloads
+       # disabled: true
+        absolute_url: '/talks/downloads/'
+
+  # Information boxes
+  info_bars:
+  - title: Notre objectif n’est pas de dire au revoir à Nianguiry, mais de le célébrer ! Pr Olivier Douville
+    color: warning
+    main_only: true
+    text: 
+      Formateur chevronné, toujours disponible et sans relâche éclairant, N. Kanté a marqué plusieurs générations d’étudiants qui, pour le plus grand nombre d’entre eux, firent leurs preuves. 
+      
+      C’est aussi à l’enseignant exigeant et bienveillant que ce colloque a rendu hommage. 
+
+      Voir [Revue RASP](https://revue-rasp.org/)!
+  - text: L’objectif, à terme, est de faire du CINI un lieu international d’excellence scientifique, alliant rigueur et pérennisation de l’héritage de Nianguiry.
+    color: warning
+    pages_only: true
+
+  # Live indications
+  live:
+    date: 09.09.2026
+    timezone: GMT+0
+    stop:       240  # in minutes
+    streaming:
+      enable: true
+      pause:     60  # in minutes
+      prepend:    5  # in minutes
+      extend:     5  # in minutes
+    demo:
+      enable: true
+      duration: 300  # in seconds
+      pause:     10  # in seconds
+
+  talks:
+    # Talk categories
+    main_categories:
+      - name: Ouverture
+        color: info
+      - name: Témoignages
+        color: success
+      - name: Communications
+        color: warning
+      - name: Discussions
+        color: dark
+      - name: Organisation
+        color: secondary
+    # Hide icons on talk overview page
+    hide_icons: false
+  speakers:
+    # Show first and last name
+    show_firstname: true
+
+  location:
+    # Disable links to locations
+    hide: false
+    # URL of location / room overview page
+    url: '/location'
+    # Main page title shown on location/room navigation bar
+    navbar_title: 'Location'
+    # Show map on location main page.  Set `map: false` if you don't want to
+    # display it.
+    map:
+      # Initial map center point
+      home_coord: 12.652950475353807, -7.929817191289311
+      # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
+      # The following do match the Bootstrap design not too badly:
+      #   - Thunderforest.Neighbourhood
+      #   - Esri.WorldTopoMap
+      map_provider: "OpenStreetMap.Mapnik"
+      default_zoom: 17
+
+
+  program:
+    # URL of program page
+    url: '/program'
+
+    # Time steps in program table
+    time_steps: 05 # in minutes
+
+    # Show intermediary time steps (next to full hours)
+    show_alltimes: true

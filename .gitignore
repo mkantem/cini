@@ -1,0 +1,16 @@
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+### Bundler ###
+.bundle/
+vendor/bundle/
+
+### Python ###
+__pycache__/
+venv/
+
+### MacOS ###
+.DS_Store

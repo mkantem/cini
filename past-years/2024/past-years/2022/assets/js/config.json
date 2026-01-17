@@ -1,0 +1,53 @@
+{
+    "map": {
+        "map_provider": "OpenStreetMap.Mapnik",
+        "home_coord": [12.652950475353807, -7.929817191289311],
+        "default_zoom": 17
+    },
+
+    "live": {
+        "time": {
+            "start": 1580461200,
+            "end": 1580479200
+        },
+
+        "streaming": {
+            "enable": true,
+            "pause": 60,
+            "prepend": 5,
+            "extend": 5
+        },
+
+        "demo": {
+            "enable": false,
+            "duration": 300,
+            "pause": 10
+        }
+    },
+
+    "lang": {
+        "map": {
+            "focus_conf": "Centrer la carte sur le lieu de la conférence",
+            "focus_me": "Afficher ma localisation actuelle"
+        },
+        "live": {
+            "pre_stream": "La diffusion en direct n'a pas encore commencé.",
+            "post_stream": "La diffusion en direct est terminée.",
+            "pause_stream": "La diffusion est actuellement en pause.",
+            "time": {
+                "soon": "à venir",
+                "now": "maintenant",
+                "in": "dans ",
+                "since": "depuis ",
+                "weeks": "semaines",
+                "week": "semaine",
+                "days": "jours",
+                "day": "jour",
+                "hours": "heures",
+                "hour": "heure",
+                "minutes": "minutes",
+                "minute": "minute"
+            }
+        }
+    }
+}
