@@ -1,16 +1,16 @@
 # CINI conference website (jekyll)
 
-This repository hosts the official website for **cini** (colloque international de l’ish). the site is built with **jekyll** using the **jekyll-theme-conference** theme.
+This repository hosts the official website for **cini** (Colloque International Nianguiry KANTE). the site is built with **jekyll** using the **jekyll-theme-conference** theme.
 
 ## About the site
 
 The website is a static conference site designed to publish essential conference information such as:
 
-- call for papers / appel à communications (cfp)
+- call for papers / appel à communications (CFP)
 - dates and deadlines
 - committees
 - author & submission guidelines
-- submission link and instructions (cmt)
+- submission link and instructions (CMT)
 - (optional) program/schedule, speakers, talks, rooms, location map
 
 content is primarily in **french**.
