@@ -83,7 +83,7 @@ DEPENDENCIES
   bigdecimal
   bundler (~> 2.1)
   jekyll-theme-conference!
-  rake (~> 12.0)
+  rake (~> 12.0, = 12.3.3)
 
 RUBY VERSION
    ruby 3.3.4p94
