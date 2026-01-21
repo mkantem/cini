@@ -29,17 +29,20 @@ Les articles acceptés seront publiés dans les actes du colloque.
 
 ## Modalités de soumission (plateforme CMT)
 
-La soumission se fait exclusivement en ligne via la plateforme **Microsoft CMT**.  
+La soumission se fait exclusivement en ligne via la plateforme **Microsoft CMT**. 
 
-Lien de soumission : <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noopener">https://cmt3.research.microsoft.com/</a>
+*CMT submission link will be coming shortly*
 
-Un compte CMT est requis avant toute soumission.
+CMT : <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noopener">https://cmt3.research.microsoft.com/</a>
 
-- Création de compte CMT :  
+Un compte CMT est requis avant toute soumission (A CMT account is needed before you can submit).
+
+- Création de compte CMT (CMT account creation):  
   <a href="https://cmt3.research.microsoft.com/docs/help/general/account-creation.html" target="_blank" rel="noopener">https://cmt3.research.microsoft.com/docs/help/general/account-creation.html</a>  
 
-- Guide pour la soumission d’un résumé :  
+- Guide pour la soumission d’un résumé (Guide on how to submit using CMT):  
   <a href="https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html" target="_blank" rel="noopener">https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html</a>  
+
 
 ---
 
