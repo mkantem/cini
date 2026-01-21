@@ -10,12 +10,12 @@ hide: false
 ## Call for Papers (Appel à communications)
 
 
-#### [English version](/documents/tdr-cini-2026-french.pdf){:target="_blank"}
+#### [English version](/documents/CFP_CINI_2026_EN.pdf){:target="_blank"}
 
 
 &nbsp;  
 
-#### [Version Française](/documents/tdr-cini-2026-french.pdf){:target="_blank"} 
+#### [Version Française](/documents/TDR_CINI_2026_FR.pdf){:target="_blank"} 
 
 
 &nbsp; 
