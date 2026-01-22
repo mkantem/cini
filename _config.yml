@@ -113,7 +113,7 @@ conference:
   # Main landing page
   main:
     logo:
-       img: 'logo2026.png'
+       img: 'logo2026.png' 
     links:
       - name: Programme
         relative_url: /program/
@@ -133,11 +133,11 @@ conference:
       
       C’est aussi à l’enseignant exigeant et bienveillant que ce colloque rend hommage!
     
-  - text: La soumission se fait exclusivement en ligne via la plateforme Microsoft CMT.
+  - text: La soumission se fait exclusivement en ligne via la plateforme Microsoft CMT ici <a href="https://cmt3.research.microsoft.com/CINI2026" target="_blank" rel="noopener">https://cmt3.research.microsoft.com/CINI2026</a>
     color: info
     main_only: true 
 
-  - text: Submissions are made exclusively online via the Microsoft CMT platform.
+  - text: Submissions are made exclusively online via the Microsoft CMT platform here <a href="https://cmt3.research.microsoft.com/CINI2026" target="_blank" rel="noopener">https://cmt3.research.microsoft.com/CINI2026</a>
     color: info
     main_only: true
   - text: L’objectif, à terme, est de faire du CINI un lieu international d’excellence scientifique, alliant rigueur et pérennisation de l’héritage de Nianguiry.

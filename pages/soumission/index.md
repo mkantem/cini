@@ -31,9 +31,7 @@ Les articles acceptés seront publiés dans les actes du colloque.
 
 La soumission se fait exclusivement en ligne via la plateforme **Microsoft CMT**. 
 
-*CMT submission link will be coming shortly*
-
-CMT : <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noopener">https://cmt3.research.microsoft.com/</a>
+*Lien pour la soumission :* : <a href="https://cmt3.research.microsoft.com/CINI2026" target="_blank" rel="noopener">https://cmt3.research.microsoft.com/CINI2026</a>
 
 Un compte CMT est requis avant toute soumission (A CMT account is needed before you can submit).
 
