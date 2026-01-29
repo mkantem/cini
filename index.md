@@ -2,7 +2,7 @@
 layout: home
 ---
 
-# Thème : Le rôle des sciences sociales dans la résolution des conflits en Afrique sub-saharienne
+# Thème : Les sciences sociales et les mécanismes de résolution des conflits en Afrique sub-saharienne
 
 ## 1. Argumentaire
 
