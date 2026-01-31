@@ -12,7 +12,7 @@ layout: default
 
   <tr>
     <td><strong>Lancement de l’appel à communication</strong></td>
-    <td>samedi 24 janvier 2026</td>
+    <td>samedi 31 janvier 2026</td>
   </tr>
 
   <tr>
