@@ -137,7 +137,7 @@ conference:
     color: info
     main_only: true 
 
-  - text: Submissions are made exclusively online via the Microsoft CMT platform here <a href="https://cmt3.research.microsoft.com/CINI2026" target="_blank" rel="noopener">https://cmt3.research.microsoft.com/CINI2026</a>
+  - text: Comment soumettre un résumé à une conférence via Microsoft CMT <a href="https://www.youtube.com/watch?v=7XLFslQgdU0" target="_blank" rel="noopener">Vidéo YouTube</a>
     color: info
     main_only: true
   - text: L’objectif, à terme, est de faire du CINI un lieu international d’excellence scientifique, alliant rigueur et pérennisation de l’héritage de Nianguiry.
