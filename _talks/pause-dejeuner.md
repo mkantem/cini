@@ -1,5 +1,5 @@
 ---
-name: Pause Dejeuner
+name: Pause déjeuner
 speakers:
   - Organisation
 categories:
@@ -7,4 +7,4 @@ categories:
 hide: false
 ---
 
-Pause Dejeuner
+Pause déjeuner

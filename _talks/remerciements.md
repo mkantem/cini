@@ -1,5 +1,5 @@
 ---
-name: Remerciements et Clôture des Travaux
+name: Remerciements et clôture des travaux
 speakers:
   - Organisation
 categories:
@@ -7,4 +7,4 @@ categories:
 hide: false
 ---
 
-Remerciements et Clôture des Travaux
+Remerciements et clôture des travaux

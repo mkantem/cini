@@ -1,7 +1,7 @@
 ---
-name: Soumaïla Oulale
-first_name: Soumaïla
-last_name: Oulale
+name: "Soumaila OULALE"
+first_name: "Soumaila"
+last_name: "OULALE"
 ---
 
-Université de Ségou, Mali
+Directeur de recherche et collaborateur de feu Nianguiry Kanté.

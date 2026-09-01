@@ -1,51 +1,253 @@
+---
 days:
-  - name: Mercredi
-    abbr: Mer
-    date: 2026-09-09
-    rooms:
-      - name: Salle de conference de l'ISH
-        talks:
-          - name: Discours d'ouverture du ministre de l'enseignement supérieur et de la recherche scientifique 
-            time_start: "09:00"
-            time_end: "09:20"
-          - name: Mots de bienvenue du directeur général de l'ISH
-            time_start: "09:20"
-            time_end: "09:30"
-          - name: Mot du DG du CNRST
-            time_start: "09:30"
-            time_end: "09:40"
-          - name: Mot du recteur de l'université de Ségou
-            time_start: "09:40"
-            time_end: "09:50"
-          - name: Mot du directeur de l'INSP
-            time_start: "09:50"
-            time_end: "10:00"
-          - name: Photo de Famille
-            time_start: "10:00"
-            time_end: "10:05"
-          - name: Pause-Café
-            time_start: "10:05"
-            time_end: "10:30"
-          - name: Temoignages sur NIANGUIRY KANTE
-            time_start: "11:00"
-            time_end: "12:00"
-          - name: Nianguiry, notre intercesseur auprès des ethnopsychiatres dogon en 2002
-            time_start: "12:00"
-            time_end: "12:15"
-          - name: Communications orales
-            time_start: "12:15"
-            time_end: "14:00"    
-      - name: En ligne
-        talks:
-          - name: Communications orales
-            time_start: "14:15"
-            time_end: "16:30"  
-  - name: Jeudi
-    abbr: Jeu
-    date: 2026-09-10
-    rooms:
-      - name: En ligne
-        talks:
-          - name: Communications orales
-            time_start: "09:00"
-            time_end: "15:00"
+- name: Mercredi
+  abbr: Mer
+  date: '2026-09-09'
+  rooms:
+  - name: Salle de conférence de l’ISH
+    talks:
+    - name: Mots de bienvenue du directeur général de l’ISH
+      time_start: '09:00'
+      time_end: '09:10'
+    - name: Mot du recteur de l'université de Ségou
+      time_start: '09:10'
+      time_end: '09:20'
+    - name: Mot du directeur de l'INSP
+      time_start: '09:20'
+      time_end: '09:30'
+    - name: Discours d'ouverture du ministre de l'enseignement supérieur et de la
+        recherche scientifique
+      time_start: '09:30'
+      time_end: '09:40'
+    - name: Photo de famille
+      time_start: '09:40'
+      time_end: '10:00'
+    - name: Pause-Café
+      time_start: '10:00'
+      time_end: '10:30'
+    - name: Témoignages sur NIANGUIRY KANTÉ
+      time_start: '11:00'
+      time_end: '12:00'
+    - name: 'LE ŊIAGUWANTULO, UNE MANIFESTATION RELIGIEUSE FÉMININE DE NARÉNA (MALI)
+        : MODALITÉS ET DYNAMIQUES SOCIOCULTURELLES'
+      time_start: '12:10'
+      time_end: '12:20'
+    - name: Mécanismes traditionnels de prévention et de gestion des conflits chez
+        les Sénoufos du secteur de Ouatialy (commune de Fourou, Mali)
+      time_start: '12:20'
+      time_end: '12:30'
+    - name: Discussion collective et questions
+      time_start: '13:00'
+      time_end: '13:15'
+    - name: Pause déjeuner
+      time_start: '13:15'
+      time_end: '14:15'
+    - name: Le rôle des sciences sociales dans l’étude des conflits en République
+        Centrafricaine
+      time_start: '14:15'
+      time_end: '14:25'
+      session: Comprendre les conflits par les sciences sociales
+      moderator: Sekou CAMARA
+    - name: 'Conflits pastoraux-agricoles : analyse des intersections entre accès
+        au foncier et la gestion des ressources naturelles dans la commune de To'
+      time_start: '14:35'
+      time_end: '14:45'
+    - name: 'Lire les conflits à travers l’espace : contribution de la géographie
+        humaine à l’analyse des violences communautaires dans le cercle de Koro, région
+        de Bandiagara au Mali'
+      time_start: '14:55'
+      time_end: '15:05'
+    - name: 'Rôle de la recherche en sciences sociales dans l’amélioration du dialogue
+        interreligieux au Burkina Faso : le cas du conflit entre protestants et coutumiers
+        dans la commune rurale de Léna, Guiriko.'
+      time_start: '15:05'
+      time_end: '15:15'
+    - name: Discussion collective et questions
+      time_start: '15:15'
+      time_end: '15:30'
+    - name: 'La résilience du système scolaire dans un contexte de crise prolongée
+        : compréhension et réponses des acteurs à Bandiagara (Mali)'
+      time_start: '15:30'
+      time_end: '15:40'
+      session: Territoires, institutions et gouvernance des conflits
+      moderator: Amadou DIABATE
+    - name: Discussion collective et questions
+      time_start: '16:00'
+      time_end: '16:15'
+  - name: En ligne
+    talks:
+    - name: Pause-Café
+      time_start: '10:00'
+      time_end: '10:30'
+    - name: Enfance sous la guerre en Afrique
+      time_start: '10:30'
+      time_end: '11:00'
+    - name: Témoignages sur NIANGUIRY KANTÉ
+      time_start: '11:00'
+      time_end: '12:00'
+    - name: Le Pacte de Kokorowé comme cas de succès d'un mécanisme endogène de gestion
+        des conflits au Burkina Faso
+      time_start: '12:00'
+      time_end: '12:10'
+      session: Savoirs locaux, médiation et réconciliation
+      moderator: Macire KANTE
+    - name: De la violence des mercenaires libériens à la réconciliation communautaire
+        dans l'Ouest ivoirien
+      time_start: '12:30'
+      time_end: '12:40'
+    - name: 'Les champs communautaires à Karangasso-Sambla: au-delà de la production
+        agricole, quel rôle dans la prévention des conflits fonciers ?'
+      time_start: '12:40'
+      time_end: '12:50'
+    - name: Contributions sur les relations du parti communiste chinois et des pays
+        africains
+      time_start: '12:50'
+      time_end: '13:00'
+    - name: Pause déjeuner
+      time_start: '13:15'
+      time_end: '14:15'
+    - name: 'Conflits latents en contexte électoral ivoirien : une étude de cas du
+        cycle électoral de 2020-2021'
+      time_start: '14:25'
+      time_end: '14:35'
+    - name: CONQUETE ET INTEGRATION DE LA NUBIE PAR L’ÉGYPTE
+      time_start: '14:45'
+      time_end: '14:55'
+    - name: 'Conflits d’usage des ressources naturelles au Burkina Faso : acteurs,
+        causes et modes de gouvernance dans les communes rurales de Koumbia et de
+        Nagréongo'
+      time_start: '15:40'
+      time_end: '15:50'
+    - name: 'Médiation sociale de conflits entre les acteurs de projets au Nord-Bénin
+        : une démarche sociologique de gestion des crises sociales'
+      time_start: '15:50'
+      time_end: '16:00'
+- name: Jeudi
+  abbr: Jeu
+  date: '2026-09-10'
+  rooms:
+  - name: Salle de conférence de l’ISH
+    talks:
+    - name: Analyse de l'efficacité externe de l'enseignement et la formation techniques
+        et professionnels au Burkina Faso
+      time_start: '09:00'
+      time_end: '09:10'
+      session: Approches critiques et interdisciplinaires
+      moderator: Silamakan KANTE
+    - name: 'Afrique: la «sécurité par le bas» une stratégie contre-offensive'
+      time_start: '09:10'
+      time_end: '09:20'
+    - name: Analyse critique du peace building dans la résolution du conflit de Casamance
+        (Sénégal)
+      time_start: '09:20'
+      time_end: '09:30'
+    - name: 'Analyse des dynamiques électorales par apprentissage automatique : un
+        outil pour la prévention des conflits au Mali'
+      time_start: '09:30'
+      time_end: '09:40'
+    - name: 'Le Mali dans les relations internationales de 2012 à 2025 : crise multidimensionnelle'
+      time_start: '09:40'
+      time_end: '09:50'
+    - name: Discussion collective et questions
+      time_start: '10:00'
+      time_end: '10:15'
+    - name: Pause-Café
+      time_start: '10:15'
+      time_end: '10:45'
+    - name: 'Conflits armés, rupture entrepreneuriale et résilience des jeunes et
+        des femmes au Niger : leçons du terrain pour le développement socio-économique
+        en Afrique subsaharienne'
+      time_start: '11:05'
+      time_end: '11:15'
+    - name: 'Conflits communautaires et vulnérabilités des personnes déplacées internes
+        au Mali : étude qualitative du camp de Faladié dans le District de Bamako'
+      time_start: '11:25'
+      time_end: '11:35'
+    - name: 'Violence contre les travailleurs humanitaires en Afrique subsaharienne
+        (1997-2026) : tendances, profils de risque et implications pour l''accès humanitaire'
+      time_start: '11:35'
+      time_end: '11:45'
+    - name: La gestion des conflits par le Sanangouya, un mécanisme traditionnel de
+        prévention et de régulation des conflits dans les couples alliés sénoufo et
+        koyaka
+      time_start: '12:05'
+      time_end: '12:15'
+    - name: Discussion collective et questions
+      time_start: '12:15'
+      time_end: '12:45'
+    - name: Pause déjeuner
+      time_start: '12:45'
+      time_end: '14:00'
+    - name: Analyse des impacts des conflits armés sur le système de santé nigérien
+        dans la zone des "Trois Frontières" et le bassin du Lac Tchad.
+      time_start: '14:00'
+      time_end: '14:10'
+      session: Santé, systèmes de santé et populations vulnérables
+      moderator: Mahamadou KANTE
+    - name: Resilience Clinics
+      time_start: '14:20'
+      time_end: '14:30'
+    - name: 'La crise sécuritaire au Mali et ses impacts sur l’accès des populations
+        aux services de santé : cas de la Commune rurale de Farako dans le Cercle
+        de Ségou'
+      time_start: '14:30'
+      time_end: '14:40'
+    - name: 'Environnement de vie et état de santé des déplacés internes à Bamako
+        : cas des déplacés à Yirmadjo.'
+      time_start: '14:40'
+      time_end: '14:50'
+    - name: 'Attaques contre les services de santé dans quatre pays d''Afrique subsaharienne
+        de 2016 à 2026 : tendances, caractéristiques et conséquences pour la sécurité
+        des systèmes de santé'
+      time_start: '14:50'
+      time_end: '15:00'
+    - name: 'Femmes allaitantes et orpaillage au Sud-ouest du Mali : Cas des sites
+        de Bokoro et Dacko, cercle de Sélingué'
+      time_start: '15:00'
+      time_end: '15:10'
+    - name: Discussion collective et questions
+      time_start: '15:10'
+      time_end: '15:25'
+    - name: Remerciements et clôture des travaux
+      time_start: '15:25'
+      time_end: '15:40'
+    - name: Clôture officielle
+      time_start: '15:40'
+      time_end: '15:50'
+  - name: En ligne
+    talks:
+    - name: 'Analyse des relations sino-africaines : développement historique et perspectives
+        actuelles'
+      time_start: '09:50'
+      time_end: '10:00'
+    - name: Pause-Café
+      time_start: '10:15'
+      time_end: '10:45'
+    - name: Conflits armés et résilience à Goma au quotidien vivre entre une économie
+        fragilisée et une cohésion sociale menacée
+      time_start: '10:45'
+      time_end: '10:55'
+      session: Conflits, résilience et développement socio-économique
+      moderator: Soumaila Oulalé
+    - name: 'Conflits armés et recomposition des flux migratoires en Afrique subsaharienne
+        : impacts socio-économiques sur les pays d’origine et d’accueil'
+      time_start: '10:55'
+      time_end: '11:05'
+    - name: 'Les femmes africaines : paix, sécurité et scolarisation des filles.'
+      time_start: '11:15'
+      time_end: '11:25'
+    - name: 'Solidarités héritées aux ressources de gouvernance locale : la mobilisation
+        des alliances interethniques en pays Koyaka à Mankono (Côte d''Ivoire)'
+      time_start: '11:45'
+      time_end: '11:55'
+    - name: 'Gestion des conflits dans la production de coton biologique au Bénin
+        : cas de l’Organisation béninoise de la promotion de l’agriculture biologique'
+      time_start: '11:55'
+      time_end: '12:05'
+    - name: Pause déjeuner
+      time_start: '12:45'
+      time_end: '14:00'
+    - name: 'Accompagnement Institutionnel et qualité de vie des infirmiers : Une
+        Revue Systématique des pratiques, enjeux et Impacts'
+      time_start: '14:10'
+      time_end: '14:20'

@@ -73,12 +73,20 @@ conference:
       url: 'https://revue-rasp.org/'
     breakpoint: md
     links:
-    #  - name: Programme
-    #    relative_url: /program/
-      - name: Appel (CFP)
-        relative_url: /talks/downloads/
-     # - name: Talks
-     #   relative_url: /talks/
+      - name: Programme
+        relative_url: /program/
+      - name: Ressources
+        menu:
+          - name: Documents à télécharger
+            relative_url: /talks/downloads/
+          - name: Informations de soumission
+            relative_url: /pages/soumission/
+          - name: Guide vidéo CMT
+            absolute_url: https://www.youtube.com/watch?v=7XLFslQgdU0
+      - name: Intervenants
+        relative_url: /speakers/
+      - name: Talks
+        relative_url: /talks/
       - name: Dates
         relative_url: /pages/dates/
       - name: Comité
@@ -89,8 +97,6 @@ conference:
             relative_url: /pages/comite-organisation/
           - name: Secrétariat
             relative_url: /pages/secretariat/
-      - name: Soumission
-        relative_url: /pages/soumission/
       - name: Lieu
         relative_url: /location/
       - name: Edition précédente
@@ -117,11 +123,12 @@ conference:
     links:
       - name: Programme
         relative_url: /program/
+      - name: Talks
+        relative_url: /talks/
+      - name: Intervenants
+        relative_url: /speakers/
       - name: Lieu
         relative_url: /location/
-      - name: Downloads
-       # disabled: true
-        absolute_url: '/talks/downloads/'
 
   # Information boxes
   info_bars:
@@ -133,11 +140,7 @@ conference:
       
       C’est aussi à l’enseignant exigeant et bienveillant que ce colloque rend hommage!
     
-  - text: La soumission se fait exclusivement en ligne via la plateforme Microsoft CMT ici <a href="https://cmt3.research.microsoft.com/CINI2026" target="_blank" rel="noopener">https://cmt3.research.microsoft.com/CINI2026</a>
-    color: info
-    main_only: true 
-
-  - text: Comment soumettre un résumé à une conférence via Microsoft CMT <a href="https://www.youtube.com/watch?v=7XLFslQgdU0" target="_blank" rel="noopener">Vidéo YouTube</a>
+  - text: Les soumissions sont closes. Consultez le programme, les talks acceptés et les profils des intervenants.
     color: info
     main_only: true
   - text: L’objectif, à terme, est de faire du CINI un lieu international d’excellence scientifique, alliant rigueur et pérennisation de l’héritage de Nianguiry.

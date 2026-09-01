@@ -1,5 +1,5 @@
 ---
-name: Salle de conference de l'ISH
+name: Salle de conférence de l’ISH
 ---
 
-La grande salle de conference de l'Institut des Sciences Humaines.
+La grande salle de conférence de l’Institut des Sciences Humaines.

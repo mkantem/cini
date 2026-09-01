@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Afficher chaque communication scientifique sur 10 minutes et ajouter après chaque session un bloc transversal de discussion égal à cinq minutes par communication.
+**Goal:** Afficher chaque communication scientifique sur 10 minutes et ajouter après chaque session un bloc transversal de discussion adapté au nombre de communications.
 
 **Architecture:** `_data/program.yml` demeure la source canonique des horaires. Une fiche de programme unique représente les discussions collectives, tandis que le JavaScript existant transforme leurs cartes en bandeaux couvrant les deux colonnes, sans les inclure aux résultats de recherche.
 
@@ -13,7 +13,7 @@
 - Conserver l’ordre et la modalité actuels des communications.
 - Ne pas modifier les durées des discours, pauses, déjeuner, keynote, témoignages et clôture.
 - Chaque communication scientifique dure exactement 10 minutes.
-- Chaque discussion dure cinq minutes multipliées par le nombre de communications de sa session.
+- Cinq discussions durent 15 minutes et la session de neuf communications dispose de 30 minutes.
 - Les discussions couvrent visuellement les deux colonnes et ne figurent pas dans la recherche.
 
 ---
@@ -24,7 +24,7 @@
 - Modify: `_tools/test_session_program.rb`
 
 - [ ] Remplacer les assertions interdisant les discussions par des assertions exigeant six blocs « Discussion collective et questions ».
-- [ ] Vérifier les six durées attendues : 25, 30, 15, 30, 45 et 35 minutes.
+- [ ] Vérifier que cinq discussions durent 15 minutes et qu’une discussion dure 30 minutes.
 - [ ] Vérifier que toutes les communications CMT programmées durent 10 minutes.
 - [ ] Exécuter `ruby _tools/test_session_program.rb` et confirmer l’échec avant implémentation.
 
@@ -36,7 +36,7 @@
 - Modify: `program/index.md`
 
 - [ ] Redistribuer les horaires de chaque session en blocs consécutifs de 10 minutes sans modifier son début ni sa fin.
-- [ ] Ajouter la discussion à la fin de chacune des six sessions avec la durée calculée.
+- [ ] Ajouter cinq discussions de 15 minutes et une discussion de 30 minutes.
 - [ ] Créer la fiche « Discussion collective et questions » dans la catégorie Discussions.
 - [ ] Simplifier la notice pour annoncer les présentations de 10 minutes et les discussions explicites.
 - [ ] Exécuter les tests Ruby et confirmer leur réussite.

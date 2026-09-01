@@ -2,7 +2,7 @@
 
 ## Objectif
 
-Faire correspondre la grille visuelle au temps de parole réel décidé par le comité scientifique : chaque communication scientifique dispose de 10 minutes, puis les cinq minutes libérées par communication sont regroupées dans un bloc explicite de discussion collective à la fin de sa session.
+Faire correspondre la grille visuelle au temps de parole réel décidé par le comité scientifique : chaque communication scientifique dispose de 10 minutes, puis un bloc explicite de discussion collective, dont la durée est adaptée au nombre de communications, clôt chaque session.
 
 ## Périmètre
 
@@ -13,7 +13,7 @@ La modification concerne uniquement les communications scientifiques regroupées
 1. Chaque communication scientifique occupe un créneau de 10 minutes dans `_data/program.yml`.
 2. L’ordre actuel des communications et leur modalité — présentiel ou en ligne — sont conservés.
 3. Après la dernière communication de chaque session, une entrée intitulée « Discussion collective et questions » est ajoutée à la grille.
-4. La durée de cette entrée est égale à cinq minutes multipliées par le nombre de communications de la session.
+4. La durée habituelle est de 15 minutes. La session du jeudi comprenant neuf communications dispose exceptionnellement de 30 minutes.
 5. Les discussions sont des entrées communes à la session : elles ne sont attribuées ni à un intervenant ni à une modalité de présentation particulière.
 6. Les horaires globaux des sessions restent, autant que possible, identiques à ceux du programme actuel. La transformation redistribue les créneaux existants sans rallonger artificiellement les journées.
 
@@ -24,8 +24,7 @@ Les communications continuent d’apparaître dans les colonnes « Salle de conf
 La notice placée au-dessus du programme indiquera clairement :
 
 - 10 minutes de présentation par communication ;
-- regroupement des cinq minutes restantes par communication ;
-- discussion collective organisée à la fin de chaque session ;
+- discussion collective organisée à la fin de chaque session, avec une durée indiquée dans la grille ;
 - rôle de la modératrice ou du modérateur dans le respect du temps et la gestion des échanges.
 
 ## Recherche
@@ -39,7 +38,7 @@ Les contrôles automatiques devront vérifier :
 - la présence de la règle des 10 minutes dans la notice ;
 - l’absence de l’ancienne règle des créneaux visuels de 15 minutes ;
 - la présence d’un bloc de discussion après chaque session scientifique ;
-- le calcul correct de la durée des discussions ;
+- la présence de cinq discussions de 15 minutes et d’une discussion de 30 minutes ;
 - le maintien de l’ordre des communications ;
 - l’affichage des blocs de discussion sur les deux colonnes ;
 - la validité des 37 communications et des 47 profils d’intervenants ;

@@ -1,5 +1,5 @@
 ---
-name: Photo de Famille
+name: Photo de famille
 speakers:
   - Participants
 categories:
@@ -7,4 +7,4 @@ categories:
 hide: false
 ---
 
-Photo de Famille
+Photo de famille

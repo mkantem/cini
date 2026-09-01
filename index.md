@@ -2,6 +2,15 @@
 layout: home
 ---
 
+<div class="jumbotron bg-light border mb-5">
+  <p class="text-uppercase text-muted font-weight-bold mb-2">3<sup>e</sup> édition du Colloque International Nianguiry Kanté</p>
+  <h1 class="display-5">CINI 2026 · 9–10 septembre 2026</h1>
+  <p class="lead"><strong>Les sciences sociales et les mécanismes de résolution des conflits en Afrique subsaharienne</strong></p>
+  <p>Le colloque se tiendra à l’Institut des Sciences Humaines du Mali, à Sotuba, avec une participation hybride pour les intervenants à distance.</p>
+  <p class="h5 mb-4"><strong>40+ intervenants</strong> · deux journées de communications, d’échanges et de témoignages</p>
+  <p class="mb-0"><strong>Les soumissions sont closes.</strong> Le programme détaillé, les talks acceptés et les profils des intervenants sont maintenant disponibles.</p>
+</div>
+
 # Thème : Les sciences sociales et les mécanismes de résolution des conflits en Afrique sub-saharienne
 
 ## 1. Argumentaire
