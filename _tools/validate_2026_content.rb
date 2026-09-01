@@ -196,6 +196,15 @@ corrected_program_labels.each do |corrected_name|
   errors << "Missing corrected program label: #{corrected_name}" unless scheduled.any? { |slot| slot["name"] == corrected_name }
 end
 
+opening_labels = [
+  "Mot du recteur de l’Université de Ségou ou de son représentant",
+  "Mot du directeur général de l’INSP ou de son représentant",
+  "Discours d’ouverture du ministre de l’Enseignement supérieur et de la Recherche scientifique ou de son représentant"
+]
+opening_labels.each do |label|
+  errors << "Missing opening-ceremony label: #{label}" unless scheduled.any? { |slot| slot["name"] == label }
+end
+
 %w[29].each do |paper_id|
   errors << "Former poster #{paper_id} is not scheduled as oral" unless talks_by_id.dig(paper_id, "scheduled_format") == "Orale"
 end

@@ -8,13 +8,13 @@ days:
     - name: Mots de bienvenue du directeur général de l’ISH
       time_start: '09:00'
       time_end: '09:10'
-    - name: Mot du recteur de l'université de Ségou
+    - name: Mot du recteur de l’Université de Ségou ou de son représentant
       time_start: '09:10'
       time_end: '09:20'
-    - name: Mot du directeur de l'INSP
+    - name: Mot du directeur général de l’INSP ou de son représentant
       time_start: '09:20'
       time_end: '09:30'
-    - name: Discours d'ouverture du ministre de l'enseignement supérieur et de la recherche scientifique
+    - name: Discours d’ouverture du ministre de l’Enseignement supérieur et de la Recherche scientifique ou de son représentant
       time_start: '09:30'
       time_end: '09:40'
     - name: Photo de famille

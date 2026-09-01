@@ -1,10 +1,10 @@
 ---
-name: Discours d'ouverture du ministre de l'enseignement supérieur et de la recherche scientifique
+name: Discours d’ouverture du ministre de l’Enseignement supérieur et de la Recherche scientifique ou de son représentant
 speakers:
-  - Ministre de l'enseignement supérieur et de la recherche scientifique
+  - Ministre de l’Enseignement supérieur et de la Recherche scientifique ou son représentant
 categories:
   - Ouverture
 hide: false
 ---
 
-Discours d'ouverture du ministre de l'enseignement supérieur et de la recherche scientifique (Répresentant)
+Discours d’ouverture du ministre de l’Enseignement supérieur et de la Recherche scientifique ou de son représentant

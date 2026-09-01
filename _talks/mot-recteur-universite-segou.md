@@ -1,10 +1,10 @@
 ---
-name: Mot du recteur de l'université de Ségou
+name: Mot du recteur de l’Université de Ségou ou de son représentant
 speakers:
-  - Recteur de l'université de Ségou
+  - Recteur de l’Université de Ségou ou son représentant
 categories:
   - Ouverture
 hide: false
 ---
 
-Mot de bienvenue du representant du recteur de l’Universite de Ségou 
+Mot du recteur de l’Université de Ségou ou de son représentant

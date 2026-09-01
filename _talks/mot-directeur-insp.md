@@ -1,10 +1,10 @@
 ---
-name: Mot du directeur de l'INSP
+name: Mot du directeur général de l’INSP ou de son représentant
 speakers:
-  - Directeur de l'INSP
+  - Directeur général de l’INSP ou son représentant
 categories:
   - Ouverture
 hide: false
 ---
 
-Mot du directeur de l'INSP
+Mot du directeur général de l’INSP ou de son représentant
