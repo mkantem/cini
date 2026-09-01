@@ -78,6 +78,7 @@ errors << "Homepage still promotes CMT submission" if config.include?("La soumis
 errors << "Homepage still promotes submission tutorial" if config.include?("Comment soumettre un résumé")
 
 program_page = File.read(File.join(ROOT, "program", "index.md"), encoding: "UTF-8")
+errors << "Program timezone notice is missing" unless program_page.include?("GMT (UTC+0) — heure de Bamako")
 expected_moderators = ["Macire KANTE", "Sekou CAMARA", "Amadou DIABATE", "Silamakan KANTE", "Soumaila Oulalé", "Mahamadou KANTE"]
 errors << "Confirmed moderators are missing from the session summary" unless expected_moderators.all? { |name| program_page.include?("<strong>Modération :</strong> #{name}") }
 errors << "Unconfirmed moderator labels remain" if program_page.include?("<strong>Modération :</strong> À confirmer")

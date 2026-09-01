@@ -8,6 +8,10 @@ Date: **09-10 Septembre 2026**
 
 Lieu: Institut des Sciences Humaines du Mali -- [ISH](https://ish.edu.ml){:target="_blank"} -- **Sotuba**
 
+<div class="alert alert-light border text-center py-2" role="note">
+  <strong>Fuseau horaire :</strong> GMT (UTC+0) — heure de Bamako
+</div>
+
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
   <strong>Programme provisoire — susceptible de modifications.</strong> Merci de signaler toute erreur ou omission par courriel au plus tard le <strong>vendredi 4 septembre 2026</strong>. La version finale du programme sera publiée après cette date.
   <button type="button" class="close" data-dismiss="alert" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
