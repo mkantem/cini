@@ -143,7 +143,7 @@ end
 
 %w[2026-09-09 2026-09-10].each do |date|
   lunch = scheduled.find { |slot| slot["date"] == date && slot["name"] == "Pause déjeuner" }
-  expected_lunch = date == "2026-09-10" ? ["12:00", "14:00"] : ["13:15", "14:15"]
+  expected_lunch = date == "2026-09-10" ? ["12:45", "13:45"] : ["13:15", "14:15"]
   errors << "Missing lunch on #{date}" unless lunch && lunch["time_start"] == expected_lunch[0] && lunch["time_end"] == expected_lunch[1]
   latest = scheduled.select { |slot| slot["date"] == date }.map { |slot| slot["time_end"] }.max
   expected_end = date == "2026-09-10" ? "16:10" : "16:30"

@@ -99,7 +99,7 @@ Lieu: Institut des Sciences Humaines du Mali -- [ISH](https://ish.edu.ml){:targe
         <li><strong>Mercredi 15:10–15:45</strong> — Territoires, institutions et gouvernance des conflits — <strong>Modération :</strong> Amadou DIABATE</li>
         <li><strong>Jeudi 09:00–09:55</strong> — Approches critiques et interdisciplinaires — <strong>Modération :</strong> Silamakan KANTE</li>
         <li><strong>Jeudi 10:25–11:40</strong> — Conflits, résilience et développement socio-économique — <strong>Modération :</strong> Soumaila Oulalé</li>
-        <li><strong>Jeudi 11:40–12:00 et 14:00–14:45</strong> — Santé, systèmes de santé et populations vulnérables — <strong>Modération :</strong> Mahamadou KANTE</li>
+        <li><strong>Jeudi 11:40–12:45</strong> — Santé, systèmes de santé et populations vulnérables — <strong>Modération :</strong> Mahamadou KANTE</li>
       </ul>
     </div>
   </div>
