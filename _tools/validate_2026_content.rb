@@ -166,7 +166,7 @@ errors << "New Issa Kansaye paper 38 is missing" unless paper_38 && Array(paper_
 paper_38_slot = scheduled.find { |slot| paper_38 && slot["name"] == paper_38["name"] }
 errors << "Paper 38 must be online on Thursday at 09:30" unless paper_38_slot && paper_38_slot["date"] == "2026-09-10" && paper_38_slot["room"] == "En ligne" && paper_38_slot["time_start"] == "09:30" && paper_38_slot["time_end"] == "09:40"
 
-{"39" => ["En ligne", "11:15"], "40" => ["En ligne", "11:25"], "41" => ["Salle de conférence de l’ISH", "11:35"]}.each do |paper_id, (room, start_time)|
+{"39" => ["En ligne", "10:55"], "40" => ["En ligne", "11:05"], "41" => ["Salle de conférence de l’ISH", "11:15"]}.each do |paper_id, (room, start_time)|
   talk = talks_by_id[paper_id]
   errors << "New paper #{paper_id} is missing" unless talk
   slot = scheduled.find { |candidate| talk && candidate["name"] == talk["name"] }
