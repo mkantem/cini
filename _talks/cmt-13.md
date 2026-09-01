@@ -1,5 +1,5 @@
 ---
-name: "Enfance sous la guerre en Afrique"
+name: "Conférence inaugurale (Keynote) — Enfance sous la guerre en Afrique"
 paper_id: "13"
 speakers:
   - "Olivier Douville"

@@ -202,6 +202,7 @@ end
 
 keynote = talks_by_id["13"]
 errors << "Paper 13 is not categorized as keynote/opening" unless Array(keynote["categories"]).include?("Ouverture")
+errors << "Paper 13 is not clearly identified as the keynote" unless keynote["name"] == "Conférence inaugurale (Keynote) — Enfance sous la guerre en Afrique"
 keynote_source = File.read(talk_files.find { |path| front_matter(path)["paper_id"].to_s == "13" }, encoding: "UTF-8")
 errors << "Paper 13 missing keynote credentials" unless keynote_source.include?("directeur de publication de la revue *Psychologie Clinique*") && keynote_source.include?("RASP")
 
