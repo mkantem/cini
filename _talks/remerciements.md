@@ -1,5 +1,5 @@
 ---
-name: Remerciements et clôture des travaux
+name: Synthèse des travaux et clôture
 speakers:
   - Organisation
 categories:
@@ -7,4 +7,4 @@ categories:
 hide: false
 ---
 
-Remerciements et clôture des travaux
+Synthèse des travaux et clôture

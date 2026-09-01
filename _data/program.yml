@@ -144,15 +144,12 @@ days:
     - name: Discussion collective et questions
       time_start: '12:30'
       time_end: '12:45'
-    - name: Pause déjeuner
+    - name: Synthèse des travaux et clôture
       time_start: '12:45'
-      time_end: '13:45'
-    - name: Remerciements et clôture des travaux
-      time_start: '13:45'
+      time_end: '13:00'
+    - name: Pause déjeuner
+      time_start: '13:00'
       time_end: '14:00'
-    - name: Clôture officielle
-      time_start: '14:00'
-      time_end: '14:10'
   - name: En ligne
     talks:
     - name: 'Analyse des relations sino-africaines : développement historique et perspectives actuelles'
@@ -178,5 +175,5 @@ days:
       session: Santé, systèmes de santé et populations vulnérables
       moderator: Mahamadou KANTE
     - name: Pause déjeuner
-      time_start: '12:45'
-      time_end: '13:45'
+      time_start: '13:00'
+      time_end: '14:00'
