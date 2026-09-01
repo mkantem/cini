@@ -95,11 +95,11 @@ Lieu: Institut des Sciences Humaines du Mali -- [ISH](https://ish.edu.ml){:targe
     <div class="card card-body mt-2 text-left">
       <ul class="mb-0">
         <li><strong>Mercredi 12:00–13:15</strong> — Savoirs locaux, médiation et réconciliation — <strong>Modération :</strong> Macire KANTE</li>
-        <li><strong>Mercredi 14:15–15:30</strong> — Comprendre les conflits par les sciences sociales — <strong>Modération :</strong> Sekou CAMARA</li>
-        <li><strong>Mercredi 15:30–16:15</strong> — Territoires, institutions et gouvernance des conflits — <strong>Modération :</strong> Amadou DIABATE</li>
-        <li><strong>Jeudi 09:00–10:15</strong> — Approches critiques et interdisciplinaires — <strong>Modération :</strong> Silamakan KANTE</li>
-        <li><strong>Jeudi 10:45–12:45</strong> — Conflits, résilience et développement socio-économique — <strong>Modération :</strong> Soumaila Oulalé</li>
-        <li><strong>Jeudi 14:00–15:25</strong> — Santé, systèmes de santé et populations vulnérables — <strong>Modération :</strong> Mahamadou KANTE</li>
+        <li><strong>Mercredi 14:15–15:10</strong> — Comprendre les conflits par les sciences sociales — <strong>Modération :</strong> Sekou CAMARA</li>
+        <li><strong>Mercredi 15:10–15:45</strong> — Territoires, institutions et gouvernance des conflits — <strong>Modération :</strong> Amadou DIABATE</li>
+        <li><strong>Jeudi 09:00–09:55</strong> — Approches critiques et interdisciplinaires — <strong>Modération :</strong> Silamakan KANTE</li>
+        <li><strong>Jeudi 10:45–12:00</strong> — Conflits, résilience et développement socio-économique — <strong>Modération :</strong> Soumaila Oulalé</li>
+        <li><strong>Jeudi 14:00–15:05</strong> — Santé, systèmes de santé et populations vulnérables — <strong>Modération :</strong> Mahamadou KANTE</li>
       </ul>
     </div>
   </div>

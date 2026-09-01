@@ -5,8 +5,14 @@ require "yaml"
 require "date"
 
 ROOT = File.expand_path("..", __dir__)
-EXPECTED_TALKS = 38
-EXPECTED_SPEAKERS = 53
+EXPECTED_TALKS = 28
+EXPECTED_SPEAKERS = 43
+REMOVED_PAPER_IDS = %w[1 2 4 5 6 11 14 16 17 27].freeze
+REMOVED_SPEAKERS = [
+  "Consolation TCHENGUELE SINAKA", "Eude Kaltani BOKOSSA", "LAURINE OCEANE DONGMO ZEBAZE",
+  "Monique Kabanza Sebiguri", "KHALID CHERKAOUI SEMMOUNI", "OUALI Julbert", "Daouda SORE",
+  "Issifou Abdourahamane Dabozi", "MBA MISSANG FREDERICK", "Fatoumata KEITA"
+].freeze
 
 def front_matter(path)
   source = File.read(path, encoding: "UTF-8")
@@ -20,6 +26,10 @@ talk_files = Dir[File.join(ROOT, "_talks", "cmt-*.md")]
 speaker_files = Dir[File.join(ROOT, "_speakers", "*.md")]
 errors = []
 
+REMOVED_PAPER_IDS.each do |paper_id|
+  errors << "Unpaid paper #{paper_id} still has a talk page" if File.exist?(File.join(ROOT, "_talks", "cmt-#{paper_id}.md"))
+end
+
 errors << "Expected #{EXPECTED_TALKS} CMT talks, found #{talk_files.length}" unless talk_files.length == EXPECTED_TALKS
 errors << "Expected #{EXPECTED_SPEAKERS} speakers, found #{speaker_files.length}" unless speaker_files.length == EXPECTED_SPEAKERS
 
@@ -27,6 +37,9 @@ speakers = speaker_files.to_h do |path|
   data = front_matter(path)
   errors << "Speaker missing name: #{path}" if data["name"].to_s.strip.empty?
   [data["name"], path]
+end
+REMOVED_SPEAKERS.each do |name|
+  errors << "Removed speaker #{name} still has a profile" if speakers.key?(name)
 end
 
 talks_by_name = {}
@@ -99,6 +112,11 @@ errors << "Confirmed moderators are assigned to the wrong sessions" unless sched
 
 discussion_slots = scheduled.select { |slot| slot["name"] == "Discussion collective et questions" }
 errors << "Six collective discussion blocks are required" unless discussion_slots.length == 6
+errors << "All collective discussions must last 15 minutes" unless discussion_slots.all? do |slot|
+  start_hour, start_minute = slot["time_start"].split(":").map(&:to_i)
+  end_hour, end_minute = slot["time_end"].split(":").map(&:to_i)
+  (end_hour * 60 + end_minute) - (start_hour * 60 + start_minute) == 15
+end
 
 talks_by_id.each do |paper_id, talk|
   occurrences = scheduled.count { |slot| slot["name"] == talk["name"] }
@@ -125,7 +143,7 @@ end
 
 %w[2026-09-09 2026-09-10].each do |date|
   lunch = scheduled.find { |slot| slot["date"] == date && slot["name"] == "Pause déjeuner" }
-  expected_lunch = date == "2026-09-10" ? ["12:45", "14:00"] : ["13:15", "14:15"]
+  expected_lunch = date == "2026-09-10" ? ["12:00", "14:00"] : ["13:15", "14:15"]
   errors << "Missing lunch on #{date}" unless lunch && lunch["time_start"] == expected_lunch[0] && lunch["time_end"] == expected_lunch[1]
   latest = scheduled.select { |slot| slot["date"] == date }.map { |slot| slot["time_end"] }.max
   expected_end = date == "2026-09-10" ? "16:10" : "16:30"
@@ -146,9 +164,9 @@ end
 paper_38 = talks_by_id["38"]
 errors << "New Issa Kansaye paper 38 is missing" unless paper_38 && Array(paper_38["speakers"]) == ["Issa Kansaye"]
 paper_38_slot = scheduled.find { |slot| paper_38 && slot["name"] == paper_38["name"] }
-errors << "Paper 38 must be online on Thursday at 09:50" unless paper_38_slot && paper_38_slot["date"] == "2026-09-10" && paper_38_slot["room"] == "En ligne" && paper_38_slot["time_start"] == "09:50" && paper_38_slot["time_end"] == "10:00"
+errors << "Paper 38 must be online on Thursday at 09:30" unless paper_38_slot && paper_38_slot["date"] == "2026-09-10" && paper_38_slot["room"] == "En ligne" && paper_38_slot["time_start"] == "09:30" && paper_38_slot["time_end"] == "09:40"
 
-{"39" => ["En ligne", "11:45"], "40" => ["En ligne", "11:55"], "41" => ["Salle de conférence de l’ISH", "12:05"]}.each do |paper_id, (room, start_time)|
+{"39" => ["En ligne", "11:15"], "40" => ["En ligne", "11:25"], "41" => ["Salle de conférence de l’ISH", "11:35"]}.each do |paper_id, (room, start_time)|
   talk = talks_by_id[paper_id]
   errors << "New paper #{paper_id} is missing" unless talk
   slot = scheduled.find { |candidate| talk && candidate["name"] == talk["name"] }
@@ -171,7 +189,6 @@ corrected_program_labels = [
   "Témoignages sur NIANGUIRY KANTÉ",
   "Pause déjeuner",
   "LE ŊIAGUWANTULO, UNE MANIFESTATION RELIGIEUSE FÉMININE DE NARÉNA (MALI) : MODALITÉS ET DYNAMIQUES SOCIOCULTURELLES",
-  "Conflits pastoraux-agricoles : analyse des intersections entre accès au foncier et la gestion des ressources naturelles dans la commune de To",
   "Photo de famille",
   "Remerciements et clôture des travaux"
 ]
@@ -179,7 +196,7 @@ corrected_program_labels.each do |corrected_name|
   errors << "Missing corrected program label: #{corrected_name}" unless scheduled.any? { |slot| slot["name"] == corrected_name }
 end
 
-%w[2 29].each do |paper_id|
+%w[29].each do |paper_id|
   errors << "Former poster #{paper_id} is not scheduled as oral" unless talks_by_id.dig(paper_id, "scheduled_format") == "Orale"
 end
 
