@@ -3,6 +3,7 @@ name: "La crise sécuritaire au Mali et ses impacts sur l’accès des populatio
 paper_id: "20"
 speakers:
   - "Sory Ibrahima KOITA"
+  - "Ana TRAORE"
 categories:
   - Communications
 track: "Axe 6. Impacts des conflits armés sur la santé et les systèmes de santé en Afrique subsaharienne"
