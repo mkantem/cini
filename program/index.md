@@ -12,9 +12,8 @@ Lieu: Institut des Sciences Humaines du Mali -- [ISH](https://ish.edu.ml){:targe
   <strong>Fuseau horaire :</strong> GMT (UTC+0) — heure de Bamako
 </div>
 
-<div class="alert alert-danger alert-dismissible fade show" role="alert">
-  <strong>Programme provisoire — susceptible de modifications.</strong> Merci de signaler toute erreur ou omission par courriel au plus tard le <strong>vendredi 4 septembre 2026</strong>. La version finale du programme sera publiée après cette date.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
+<div class="alert alert-success text-center py-2" role="note">
+  <strong>Programme final.</strong>
 </div>
 
 <div class="alert alert-info alert-dismissible fade show" role="alert">
@@ -98,12 +97,12 @@ Lieu: Institut des Sciences Humaines du Mali -- [ISH](https://ish.edu.ml){:targe
   <div id="scientific-sessions-details" class="collapse">
     <div class="card card-body mt-2 text-left">
       <ul class="mb-0">
-        <li><strong>Mercredi 12:00–13:15</strong> — Savoirs locaux, médiation et réconciliation — <strong>Modération :</strong> Macire KANTE</li>
-        <li><strong>Mercredi 14:15–15:10</strong> — Comprendre les conflits par les sciences sociales — <strong>Modération :</strong> Sekou CAMARA</li>
-        <li><strong>Mercredi 15:10–15:45</strong> — Territoires, institutions et gouvernance des conflits — <strong>Modération :</strong> Amadou DIABATE</li>
-        <li><strong>Jeudi 09:00–09:55</strong> — Approches critiques et interdisciplinaires — <strong>Modération :</strong> Silamakan KANTE</li>
-        <li><strong>Jeudi 10:25–11:40</strong> — Conflits, résilience et développement socio-économique — <strong>Modération :</strong> Soumaila Oulalé</li>
-        <li><strong>Jeudi 11:40–12:45</strong> — Santé, systèmes de santé et populations vulnérables — <strong>Modération :</strong> Mahamadou KANTE</li>
+        <li><strong>Mercredi 12:00–13:15</strong> — Savoirs locaux, médiation et réconciliation — <strong>Modération :</strong> Dr Macire KANTE</li>
+        <li><strong>Mercredi 14:15–15:10</strong> — Comprendre les conflits par les sciences sociales — <strong>Modération :</strong> Dr Sekou CAMARA</li>
+        <li><strong>Mercredi 15:10–15:45</strong> — Territoires, institutions et gouvernance des conflits — <strong>Modération :</strong> Dr Amadou DIABATE</li>
+        <li><strong>Jeudi 09:00–09:55</strong> — Approches critiques et interdisciplinaires — <strong>Modération :</strong> Dr Silamakan KANTE</li>
+        <li><strong>Jeudi 10:25–11:40</strong> — Conflits, résilience et développement socio-économique — <strong>Modération :</strong> Dr Soumaila Oulalé</li>
+        <li><strong>Jeudi 11:40–12:45</strong> — Santé, systèmes de santé et populations vulnérables — <strong>Modération :</strong> Dr Mahamadou KANTE</li>
       </ul>
     </div>
   </div>

@@ -6,8 +6,8 @@ require "date"
 program = YAML.safe_load(File.read("_data/program.yml", encoding: "UTF-8"), permitted_classes: [Date], aliases: true)
 page = File.read("program/index.md", encoding: "UTF-8")
 
-abort "Program must display a provisional-program warning." unless page.include?("Programme provisoire") && page.include?("susceptible de modifications") && page.include?("vendredi 4 septembre 2026")
-abort "Provisional-program warning must be red and dismissible." unless page.include?("alert alert-danger alert-dismissible")
+abort "Program must display a final-program notice." unless page.include?("<strong>Programme final.</strong>") && page.include?("alert alert-success")
+abort "Outdated provisional notice or deadline remains." if page.match?(/provisoire|susceptible de modifications|4 septembre 2026|publiée après cette date/i)
 abort "Program must state the 10-minute speaking limit." unless page.include?("<strong>10 minutes</strong>")
 abort "Program must explain that discussion duration depends on the session." unless page.include?("durée") && page.include?("adaptée au nombre de communications") && page.include?("discussion collective")
 abort "Unnecessary explanation about hidden Discussion blocks remains." if page.include?("aucun bloc « Discussion » séparé")
@@ -37,7 +37,7 @@ scheduled_cmt_slots = slots.select { |slot| cmt_names.include?(slot["name"]) }
 abort "Every CMT talk must be scheduled for exactly 10 minutes." unless scheduled_cmt_slots.all? { |slot| duration.call(slot) == 10 }
 abort "Session labels are not embedded in the grid data." unless slots.count { |slot| slot["session"] } == 6
 abort "Session moderator labels are missing." unless slots.select { |slot| slot["session"] }.all? { |slot| slot["moderator"] }
-expected_moderators = ["Macire KANTE", "Sekou CAMARA", "Amadou DIABATE", "Silamakan KANTE", "Soumaila Oulalé", "Mahamadou KANTE"]
+expected_moderators = ["Dr Macire KANTE", "Dr Sekou CAMARA", "Dr Amadou DIABATE", "Dr Silamakan KANTE", "Dr Soumaila Oulalé", "Dr Mahamadou KANTE"]
 actual_moderators = program["days"].flat_map do |day|
   day["rooms"].flat_map { |room| room["talks"].select { |slot| slot["session"] }.map { |slot| [day["date"].to_s, slot] } }
 end.sort_by { |date, slot| [date, slot["time_start"]] }.map { |_date, slot| slot["moderator"] }

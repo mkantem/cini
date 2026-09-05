@@ -8,7 +8,7 @@ Université d’Abomey-Calavi, Bénin
 
 <img src="/assets/images/speakers/nonvide-corneille-dassou.png" alt="Portrait de Nonvidé Corneille Dassou" class="img-fluid rounded mb-4" style="max-width: 360px;">
 
-Nonvidé Corneille Dassou est un ingénieur agronome béninois, originaire d’Abomey, né le 4 juillet 1988. Spécialiste du développement rural, il commence son parcours professionnel en 2014 à la direction d’Helvetas Bénin, dans le cadre du projet Post-récolte, après l’obtention de sa licence professionnelle. Il travaille alors aux côtés des producteurs dans les communes de Bokombé et de Savalou.
+Nonvidé Corneille Dassou est un ingénieur agronome béninois, originaire d’Abomey, né le 4 juillet 1988. Spécialiste du développement rural, il commence son parcours professionnel en 2014 à la direction d’Helvetas Bénin, dans le cadre du projet Post-récolte, après l’obtention de sa licence professionnelle. Il travaille alors aux côtés des producteurs dans les communes de Boukombé et de Savalou.
 
 Titulaire d’un master professionnel de la Faculté des Sciences Agronomiques de l’Université d’Abomey-Calavi, obtenu en mars 2017, il a consacré ses travaux de recherche, financés par le Centre AfricaRice, à l’impact de l’introduction d’un système amélioré d’étuvage du riz au Bénin, avec un intérêt particulier pour la commune de Malanville.
 

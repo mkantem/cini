@@ -6,7 +6,7 @@ require "date"
 
 ROOT = File.expand_path("..", __dir__)
 EXPECTED_TALKS = 28
-EXPECTED_SPEAKERS = 43
+EXPECTED_SPEAKERS = 44
 REMOVED_PAPER_IDS = %w[1 2 4 5 6 11 14 16 17 27].freeze
 REMOVED_SPEAKERS = [
   "Consolation TCHENGUELE SINAKA", "Eude Kaltani BOKOSSA", "LAURINE OCEANE DONGMO ZEBAZE",
@@ -79,7 +79,7 @@ errors << "Homepage still promotes submission tutorial" if config.include?("Comm
 
 program_page = File.read(File.join(ROOT, "program", "index.md"), encoding: "UTF-8")
 errors << "Program timezone notice is missing" unless program_page.include?("GMT (UTC+0) — heure de Bamako")
-expected_moderators = ["Macire KANTE", "Sekou CAMARA", "Amadou DIABATE", "Silamakan KANTE", "Soumaila Oulalé", "Mahamadou KANTE"]
+expected_moderators = ["Dr Macire KANTE", "Dr Sekou CAMARA", "Dr Amadou DIABATE", "Dr Silamakan KANTE", "Dr Soumaila Oulalé", "Dr Mahamadou KANTE"]
 errors << "Confirmed moderators are missing from the session summary" unless expected_moderators.all? { |name| program_page.include?("<strong>Modération :</strong> #{name}") }
 errors << "Unconfirmed moderator labels remain" if program_page.include?("<strong>Modération :</strong> À confirmer")
 errors << "Moderator responsibilities are missing" unless program_page.include?("respect du temps") && program_page.include?("distribution de la parole")
@@ -87,8 +87,9 @@ errors << "Moderator notice still says names will be added later" if program_pag
 errors << "Moderator notice does not point to the published names" unless program_page.include?("Le nom de la modératrice ou du modérateur de chaque session est indiqué dans le programme")
 errors << "Presentation-time banner is missing" unless program_page.include?("alert alert-info") && program_page.include?("Chaque communication dispose de <strong>10 minutes</strong>") && program_page.include?("adaptée au nombre de communications") && program_page.include?("discussion collective")
 errors << "Moderator banner is missing" unless program_page.include?("alert alert-secondary") && program_page.include?("Chaque session scientifique est conduite")
-errors << "Provisional-program warning is missing" unless program_page.include?("alert alert-danger alert-dismissible") && program_page.include?("Programme provisoire") && program_page.include?("susceptible de modifications") && program_page.include?("vendredi 4 septembre 2026")
-errors << "Program banners must be dismissible" unless program_page.scan("alert-dismissible").length == 3
+errors << "Final-program notice is missing" unless program_page.include?("alert alert-success") && program_page.include?("<strong>Programme final.</strong>")
+errors << "Outdated provisional notice or deadline remains" if program_page.match?(/provisoire|susceptible de modifications|4 septembre 2026|publiée après cette date/i)
+errors << "Speaking-limit and moderator banners must be dismissible" unless program_page.scan("alert-dismissible").length == 2
 
 program = YAML.safe_load(File.read(File.join(ROOT, "_data", "program.yml"), encoding: "UTF-8"), permitted_classes: [Date], aliases: true)
 scheduled = []
@@ -156,7 +157,9 @@ errors << "Transversal round table still exists in the talks collection" if File
 testimony_rooms = scheduled.select { |slot| slot["date"] == "2026-09-09" && slot["name"] == "Témoignages sur NIANGUIRY KANTÉ" }.map { |slot| slot["room"] }.sort
 errors << "Testimonies must appear in both visual rooms" unless testimony_rooms == ["En ligne", "Salle de conférence de l’ISH"]
 testimony = front_matter(File.join(ROOT, "_talks", "temoignages.md"))
-expected_witnesses = ["Hamidou MAGASSA", "Fanta SOW", "Birama Djan DIAKITÉ", "Soumaila OULALE"]
+expected_witnesses = ["Hamidou MAGASSA", "Birama Djan DIAKITÉ", "Soumaila OULALE"]
+errors << "Unconfirmed witness Fanta Sow still has a profile" if File.exist?(File.join(ROOT, "_speakers", "fanta-sow.md"))
+errors << "Unconfirmed witness Fanta Sow remains in testimonies" if File.read(File.join(ROOT, "_talks", "temoignages.md"), encoding: "UTF-8").match?(/Fanta\s+Sow/i)
 errors << "Confirmed witnesses are missing" unless testimony["speakers"] == expected_witnesses
 expected_witnesses.each do |name|
   errors << "Missing witness profile for #{name}" unless speakers.key?(name)

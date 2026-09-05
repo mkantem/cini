@@ -65,7 +65,7 @@ days:
       time_start: '12:00'
       time_end: '12:10'
       session: Savoirs locaux, médiation et réconciliation
-      moderator: Macire KANTE
+      moderator: Dr Macire KANTE
     - name: De la violence des mercenaires libériens à la réconciliation communautaire dans l'Ouest ivoirien
       time_start: '12:30'
       time_end: '12:40'
@@ -82,7 +82,7 @@ days:
       time_start: '14:15'
       time_end: '14:25'
       session: Comprendre les conflits par les sciences sociales
-      moderator: Sekou CAMARA
+      moderator: Dr Sekou CAMARA
     - name: CONQUETE ET INTEGRATION DE LA NUBIE PAR L’ÉGYPTE
       time_start: '14:25'
       time_end: '14:35'
@@ -90,7 +90,7 @@ days:
       time_start: '15:10'
       time_end: '15:20'
       session: Territoires, institutions et gouvernance des conflits
-      moderator: Amadou DIABATE
+      moderator: Dr Amadou DIABATE
     - name: 'Médiation sociale de conflits entre les acteurs de projets au Nord-Bénin : une démarche sociologique de gestion des crises sociales'
       time_start: '15:20'
       time_end: '15:30'
@@ -104,7 +104,7 @@ days:
       time_start: '09:00'
       time_end: '09:10'
       session: Approches critiques et interdisciplinaires
-      moderator: Silamakan KANTE
+      moderator: Dr Silamakan KANTE
     - name: 'Analyse des dynamiques électorales par apprentissage automatique : un outil pour la prévention des conflits au Mali'
       time_start: '09:10'
       time_end: '09:20'
@@ -132,7 +132,7 @@ days:
     - name: 'La crise sécuritaire au Mali et ses impacts sur l’accès des populations aux services de santé : cas de la Commune rurale de Farako dans le Cercle de Ségou'
       time_start: '11:50'
       time_end: '12:00'
-    - name: 'Environnement de vie et état de santé des déplacés internes à Bamako : cas des déplacés à Yirmadjo.'
+    - name: 'Environnement de vie et état de santé des déplacés internes à Bamako : cas des déplacés à Faladjè.'
       time_start: '12:00'
       time_end: '12:10'
     - name: 'Attaques contre les services de santé dans quatre pays d''Afrique subsaharienne de 2016 à 2026 : tendances, caractéristiques et conséquences pour la sécurité des systèmes de santé'
@@ -162,7 +162,7 @@ days:
       time_start: '10:25'
       time_end: '10:35'
       session: Conflits, résilience et développement socio-économique
-      moderator: Soumaila Oulalé
+      moderator: Dr Soumaila Oulalé
     - name: 'Solidarités héritées aux ressources de gouvernance locale : la mobilisation des alliances interethniques en pays Koyaka à Mankono (Côte d''Ivoire)'
       time_start: '10:55'
       time_end: '11:05'
@@ -173,7 +173,7 @@ days:
       time_start: '11:40'
       time_end: '11:50'
       session: Santé, systèmes de santé et populations vulnérables
-      moderator: Mahamadou KANTE
+      moderator: Dr Mahamadou KANTE
     - name: Pause déjeuner
       time_start: '13:00'
       time_end: '14:00'
