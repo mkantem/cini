@@ -1,21 +1,21 @@
 ---
-name: Témoignages sur NIANGUIRY KANTÉ — En salle
+name: Témoignages sur Nianguiry Kanté
 speakers:
   - "Hamidou MAGASSA"
   - "Birama Djan DIAKITÉ"
+  - "Berta Mendiguren"
   - "Soumaila OULALE"
 categories:
   - Témoignages
-presentation_mode: "Présentiel"
-hide: false
+hide: true
 ---
 
-Cette séquence réunit des personnes ayant collaboré avec feu Nianguiry Kanté ou ayant été formées sous sa direction :
+Le mercredi 9 septembre, chaque intervenant disposera de **10 minutes**, suivies de **20 minutes d’échanges et de questions**. Les horaires sont en GMT (UTC+0), heure de Bamako.
 
-- **Prof. Hamidou Magassa** — **En salle**, ancien collaborateur de feu Nianguiry Kanté ;
-- **Birama Djan Diakité** — **En salle**, Institut National de Santé Publique du Mali, ancien collaborateur de feu Nianguiry Kanté ;
-- **Dr (DR) Soumaila Oulalé** — **En salle**, collaborateur de feu Nianguiry Kanté.
-
-Ces interventions auront lieu dans la salle de conférence de l’ISH, le mercredi 9 septembre de 11:00 à 12:00 (GMT, UTC+0).
-
-Le [témoignage de Berta Mendiguren en ligne]({{ '/talks/temoignages-en-ligne/' | relative_url }}) figure dans la colonne « En ligne » du programme.
+| Horaire | Intervenant ou activité | Modalité |
+|---|---|---|
+| 11:00–11:10 | [Prof. Hamidou Magassa]({{ '/talks/temoignage-hamidou-magassa/' | relative_url }}) | Salle de conférence de l’ISH |
+| 11:10–11:20 | [Birama Djan Diakité]({{ '/talks/temoignage-birama-djan-diakite/' | relative_url }}) | Salle de conférence de l’ISH |
+| 11:20–11:30 | [Berta Mendiguren]({{ '/talks/temoignages-en-ligne/' | relative_url }}) | En ligne |
+| 11:30–11:40 | [Dr (DR) Soumaila Oulalé]({{ '/talks/temoignage-soumaila-oulale/' | relative_url }}) | Salle de conférence de l’ISH |
+| 11:40–12:00 | [Échanges et questions avec les quatre intervenants]({{ '/talks/echanges-temoignages/' | relative_url }}) | En salle et en ligne |

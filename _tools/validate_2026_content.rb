@@ -155,23 +155,27 @@ end
 errors << "Day 2 still contains the transversal round table" if scheduled.any? { |slot| slot["date"] == "2026-09-10" && slot["name"] == "Table ronde transversale" }
 errors << "Transversal round table still exists in the talks collection" if File.exist?(File.join(ROOT, "_talks", "table-ronde-transversale.md"))
 expected_testimonies = {
-  "temoignages.md" => ["Salle de conférence de l’ISH", ["Hamidou MAGASSA", "Birama Djan DIAKITÉ", "Soumaila OULALE"], "Présentiel"],
-  "temoignages-en-ligne.md" => ["En ligne", ["Berta Mendiguren"], "Ligne"]
+  "temoignage-hamidou-magassa.md" => ["Salle de conférence de l’ISH", "Hamidou MAGASSA", "Présentiel", "11:00", "11:10"],
+  "temoignage-birama-djan-diakite.md" => ["Salle de conférence de l’ISH", "Birama Djan DIAKITÉ", "Présentiel", "11:10", "11:20"],
+  "temoignages-en-ligne.md" => ["En ligne", "Berta Mendiguren", "Ligne", "11:20", "11:30"],
+  "temoignage-soumaila-oulale.md" => ["Salle de conférence de l’ISH", "Soumaila OULALE", "Présentiel", "11:30", "11:40"]
 }
-expected_testimonies.each do |file, (room, names, mode)|
+expected_testimonies.each do |file, (room, name, mode, start_time, end_time)|
   path = File.join(ROOT, "_talks", file)
   unless File.exist?(path)
     errors << "Missing testimony page: #{file}"
     next
   end
   talk = front_matter(path)
-  errors << "Incorrect witnesses for #{room}" unless talk["speakers"] == names
-  errors << "Incorrect testimony mode for #{room}" unless talk["presentation_mode"] == mode
+  errors << "Incorrect witness for #{file}" unless talk["speakers"] == [name]
+  errors << "Incorrect testimony mode for #{file}" unless talk["presentation_mode"] == mode
   slots = scheduled.select { |slot| slot["name"] == talk["name"] }
-  errors << "Testimony must appear only in #{room} at 11:00–12:00" unless slots.length == 1 && slots.first.values_at("date", "room", "time_start", "time_end") == ["2026-09-09", room, "11:00", "12:00"]
-  names.each { |name| errors << "Missing witness profile for #{name}" unless speakers.key?(name) }
-  errors << "Unconfirmed Fanta Sow remains in testimonies" if File.read(path, encoding: "UTF-8").match?(/Fanta\s+Sow/i)
+  errors << "Incorrect ten-minute testimony slot for #{name}" unless slots.length == 1 && slots.first.values_at("date", "room", "time_start", "time_end") == ["2026-09-09", room, start_time, end_time]
+  errors << "Missing witness profile for #{name}" unless speakers.key?(name)
 end
+exchange_slots = scheduled.select { |slot| slot["name"] == "Échanges et questions sur les témoignages" }
+errors << "Twenty-minute testimony exchange must appear in both rooms before noon" unless exchange_slots.length == 2 && exchange_slots.map { |s| s["room"] }.sort == ["En ligne", "Salle de conférence de l’ISH"] && exchange_slots.all? { |s| s.values_at("date", "time_start", "time_end") == ["2026-09-09", "11:40", "12:00"] }
+errors << "Old hour-long testimony blocks remain" if scheduled.any? { |s| s["name"].start_with?("Témoignages sur NIANGUIRY KANTÉ —") }
 errors << "Unconfirmed Fanta Sow still has a profile" if File.exist?(File.join(ROOT, "_speakers", "fanta-sow.md"))
 
 paper_38 = talks_by_id["38"]
@@ -199,7 +203,7 @@ errors << "Missing speaker profile for Sheila Médina KARAMBIRI" unless speakers
 
 corrected_program_labels = [
   "Mots de bienvenue du directeur général de l’ISH",
-  "Témoignages sur NIANGUIRY KANTÉ — En salle",
+  "Témoignage de Hamidou Magassa",
   "Pause déjeuner",
   "LE ŊIAGUWANTULO, UNE MANIFESTATION RELIGIEUSE FÉMININE DE NARÉNA (MALI) : MODALITÉS ET DYNAMIQUES SOCIOCULTURELLES",
   "Photo de famille",
