@@ -6,7 +6,7 @@ require "date"
 
 ROOT = File.expand_path("..", __dir__)
 EXPECTED_TALKS = 28
-EXPECTED_SPEAKERS = 44
+EXPECTED_SPEAKERS = 45
 REMOVED_PAPER_IDS = %w[1 2 4 5 6 11 14 16 17 27].freeze
 REMOVED_SPEAKERS = [
   "Consolation TCHENGUELE SINAKA", "Eude Kaltani BOKOSSA", "LAURINE OCEANE DONGMO ZEBAZE",
@@ -154,16 +154,25 @@ end
 
 errors << "Day 2 still contains the transversal round table" if scheduled.any? { |slot| slot["date"] == "2026-09-10" && slot["name"] == "Table ronde transversale" }
 errors << "Transversal round table still exists in the talks collection" if File.exist?(File.join(ROOT, "_talks", "table-ronde-transversale.md"))
-testimony_rooms = scheduled.select { |slot| slot["date"] == "2026-09-09" && slot["name"] == "Témoignages sur NIANGUIRY KANTÉ" }.map { |slot| slot["room"] }.sort
-errors << "Testimonies must appear in both visual rooms" unless testimony_rooms == ["En ligne", "Salle de conférence de l’ISH"]
-testimony = front_matter(File.join(ROOT, "_talks", "temoignages.md"))
-expected_witnesses = ["Hamidou MAGASSA", "Birama Djan DIAKITÉ", "Soumaila OULALE"]
-errors << "Unconfirmed witness Fanta Sow still has a profile" if File.exist?(File.join(ROOT, "_speakers", "fanta-sow.md"))
-errors << "Unconfirmed witness Fanta Sow remains in testimonies" if File.read(File.join(ROOT, "_talks", "temoignages.md"), encoding: "UTF-8").match?(/Fanta\s+Sow/i)
-errors << "Confirmed witnesses are missing" unless testimony["speakers"] == expected_witnesses
-expected_witnesses.each do |name|
-  errors << "Missing witness profile for #{name}" unless speakers.key?(name)
+expected_testimonies = {
+  "temoignages.md" => ["Salle de conférence de l’ISH", ["Hamidou MAGASSA", "Birama Djan DIAKITÉ", "Soumaila OULALE"], "Présentiel"],
+  "temoignages-en-ligne.md" => ["En ligne", ["Berta Mendiguren"], "Ligne"]
+}
+expected_testimonies.each do |file, (room, names, mode)|
+  path = File.join(ROOT, "_talks", file)
+  unless File.exist?(path)
+    errors << "Missing testimony page: #{file}"
+    next
+  end
+  talk = front_matter(path)
+  errors << "Incorrect witnesses for #{room}" unless talk["speakers"] == names
+  errors << "Incorrect testimony mode for #{room}" unless talk["presentation_mode"] == mode
+  slots = scheduled.select { |slot| slot["name"] == talk["name"] }
+  errors << "Testimony must appear only in #{room} at 11:00–12:00" unless slots.length == 1 && slots.first.values_at("date", "room", "time_start", "time_end") == ["2026-09-09", room, "11:00", "12:00"]
+  names.each { |name| errors << "Missing witness profile for #{name}" unless speakers.key?(name) }
+  errors << "Unconfirmed Fanta Sow remains in testimonies" if File.read(path, encoding: "UTF-8").match?(/Fanta\s+Sow/i)
 end
+errors << "Unconfirmed Fanta Sow still has a profile" if File.exist?(File.join(ROOT, "_speakers", "fanta-sow.md"))
 
 paper_38 = talks_by_id["38"]
 errors << "New Issa Kansaye paper 38 is missing" unless paper_38 && Array(paper_38["speakers"]) == ["Issa Kansaye"]
@@ -190,7 +199,7 @@ errors << "Missing speaker profile for Sheila Médina KARAMBIRI" unless speakers
 
 corrected_program_labels = [
   "Mots de bienvenue du directeur général de l’ISH",
-  "Témoignages sur NIANGUIRY KANTÉ",
+  "Témoignages sur NIANGUIRY KANTÉ — En salle",
   "Pause déjeuner",
   "LE ŊIAGUWANTULO, UNE MANIFESTATION RELIGIEUSE FÉMININE DE NARÉNA (MALI) : MODALITÉS ET DYNAMIQUES SOCIOCULTURELLES",
   "Photo de famille",
