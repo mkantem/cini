@@ -16,13 +16,6 @@ Lieu: Institut des Sciences Humaines du Mali -- [ISH](https://ish.edu.ml){:targe
   <strong>Programme final.</strong>
 </div>
 
-<div class="alert alert-light border py-2" role="note">
-  <strong>Témoignages sur Nianguiry Kanté — mercredi 9 septembre, 11:00–12:00 :</strong>
-  Seule Berta Mendiguren interviendra en ligne. Hamidou Magassa, Birama Djan Diakité et Soumaila Oulalé interviendront dans la salle de conférence de l’ISH.
-  Chaque témoignage durera <strong>10 minutes</strong>, dans l’ordre suivant : Hamidou Magassa (11:00), Birama Djan Diakité (11:10), Berta Mendiguren (11:20), puis Soumaila Oulalé (11:30).
-  <strong>Échanges et questions : 11:40–12:00</strong>, avec les quatre intervenants, en salle et en ligne.
-</div>
-
 <div class="alert alert-info alert-dismissible fade show" role="alert">
   Chaque communication dispose de <strong>10 minutes</strong>. Un temps de <strong>discussion collective et de questions</strong> est organisé à la fin de chaque session. Sa durée, indiquée dans la grille, est adaptée au nombre de communications programmées.
   <button type="button" class="close" data-dismiss="alert" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
