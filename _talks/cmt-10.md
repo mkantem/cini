@@ -4,6 +4,7 @@ paper_id: "10"
 speakers:
   - "Tionyélé FAYAMA"
   - "Souleymane KARAMBIRI"
+  - "DABIRE Joel"
 categories:
   - Communications
 track: "Axe 2 : Importance des coutumes locales et des connaissances autochtones"
