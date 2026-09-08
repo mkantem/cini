@@ -25,8 +25,8 @@ Nianguiry Kanté ; sociologie de la santé ; INRSP ; formation ; héritage scien
 
 ## Informations pratiques
 
-**Dr (DR) Soumaila Oulalé**, directeur du Centre d’Expertise et de Recherche Appliquée pour le Développement (CERAD) de l’Université de Ségou et collaborateur de feu Nianguiry Kanté, interviendra **en salle**, en quatrième position, le mercredi 9 septembre de **11:30 à 11:40** (GMT, UTC+0), dans la salle de conférence de l’ISH.
+**Dr (DR) Soumaila Oulalé**, directeur du Centre d’Expertise et de Recherche Appliquée pour le Développement (CERAD) de l’Université de Ségou et collaborateur de feu Nianguiry Kanté, interviendra **en salle**, en cinquième position, le mercredi 9 septembre de **11:40 à 11:50** (GMT, UTC+0), dans la salle de conférence de l’ISH.
 
-Des échanges et questions avec les quatre intervenants suivront de **11:40 à 12:00**.
+Des échanges et questions avec les cinq intervenants suivront de **11:50 à 12:00**.
 
 [Consulter l’ordre complet des témoignages]({{ '/talks/temoignages/' | relative_url }}).

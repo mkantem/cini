@@ -6,7 +6,7 @@ require "date"
 
 ROOT = File.expand_path("..", __dir__)
 EXPECTED_TALKS = 28
-EXPECTED_SPEAKERS = 45
+EXPECTED_SPEAKERS = 47
 REMOVED_PAPER_IDS = %w[1 2 4 5 6 11 14 16 17 27].freeze
 REMOVED_SPEAKERS = [
   "Consolation TCHENGUELE SINAKA", "Eude Kaltani BOKOSSA", "LAURINE OCEANE DONGMO ZEBAZE",
@@ -158,7 +158,8 @@ expected_testimonies = {
   "temoignage-hamidou-magassa.md" => ["Salle de conférence de l’ISH", "Hamidou MAGASSA", "Présentiel", "11:00", "11:10"],
   "temoignage-birama-djan-diakite.md" => ["Salle de conférence de l’ISH", "Birama Djan DIAKITÉ", "Présentiel", "11:10", "11:20"],
   "temoignages-en-ligne.md" => ["En ligne", "Berta Mendiguren", "Ligne", "11:20", "11:30"],
-  "temoignage-soumaila-oulale.md" => ["Salle de conférence de l’ISH", "Soumaila OULALE", "Présentiel", "11:30", "11:40"]
+  "temoignage-fanta-sow.md" => ["Salle de conférence de l’ISH", "Fanta SOW", "Présentiel", "11:30", "11:40"],
+  "temoignage-soumaila-oulale.md" => ["Salle de conférence de l’ISH", "Soumaila OULALE", "Présentiel", "11:40", "11:50"]
 }
 expected_testimonies.each do |file, (room, name, mode, start_time, end_time)|
   path = File.join(ROOT, "_talks", file)
@@ -174,9 +175,8 @@ expected_testimonies.each do |file, (room, name, mode, start_time, end_time)|
   errors << "Missing witness profile for #{name}" unless speakers.key?(name)
 end
 exchange_slots = scheduled.select { |slot| slot["name"] == "Échanges et questions sur les témoignages" }
-errors << "Twenty-minute testimony exchange must appear in both rooms before noon" unless exchange_slots.length == 2 && exchange_slots.map { |s| s["room"] }.sort == ["En ligne", "Salle de conférence de l’ISH"] && exchange_slots.all? { |s| s.values_at("date", "time_start", "time_end") == ["2026-09-09", "11:40", "12:00"] }
+errors << "Ten-minute testimony exchange must appear in both rooms before noon" unless exchange_slots.length == 2 && exchange_slots.map { |s| s["room"] }.sort == ["En ligne", "Salle de conférence de l’ISH"] && exchange_slots.all? { |s| s.values_at("date", "time_start", "time_end") == ["2026-09-09", "11:50", "12:00"] }
 errors << "Old hour-long testimony blocks remain" if scheduled.any? { |s| s["name"].start_with?("Témoignages sur NIANGUIRY KANTÉ —") }
-errors << "Unconfirmed Fanta Sow still has a profile" if File.exist?(File.join(ROOT, "_speakers", "fanta-sow.md"))
 
 paper_38 = talks_by_id["38"]
 errors << "New Issa Kansaye paper 38 is missing" unless paper_38 && Array(paper_38["speakers"]) == ["Issa Kansaye"]
