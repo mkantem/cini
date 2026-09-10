@@ -50,7 +50,7 @@ day2_slots = day2["rooms"].flat_map { |room| room["talks"].map { |talk| talk.mer
 
 abort "Wednesday lunch must begin at 13:15." unless day1_slots.any? { |slot| slot["name"] == "Pause déjeuner" && slot["time_start"] == "13:15" }
 abort "Wednesday must finish at 15:45." unless day1_slots.map { |slot| slot["time_end"] }.max == "15:45"
-abort "Thursday synthesis and closing must precede lunch." unless day2_slots.any? { |slot| slot["name"] == "Synthèse des travaux et clôture" && slot["time_start"] == "12:45" && slot["time_end"] == "13:00" }
+abort "Thursday synthesis and closing must precede lunch." unless day2_slots.any? { |slot| slot["name"] == "Synthèse des travaux et clôture" && slot["time_start"] == "12:35" && slot["time_end"] == "12:50" }
 abort "Thursday lunch must run from 13:00 to 14:00." unless day2_slots.any? { |slot| slot["name"] == "Pause déjeuner" && slot["time_start"] == "13:00" && slot["time_end"] == "14:00" }
 abort "A separate official closing block must not remain." if day2_slots.any? { |slot| slot["name"] == "Clôture officielle" }
 abort "Thursday coffee break must run from 09:55 to 10:25." unless day2_slots.any? { |slot| slot["name"] == "Pause-Café" && slot["time_start"] == "09:55" && slot["time_end"] == "10:25" }
@@ -61,13 +61,12 @@ abort "The three new presentations must precede the collective discussion." unle
 abort "The fifth-session discussion must run from 11:25 to 11:40." unless day2_slots.any? { |slot| slot["name"] == discussion_name && slot["time_start"] == "11:25" && slot["time_end"] == "11:40" }
 final_pre_lunch_times = {
   "Environnement de vie" => "12:00",
-  "Attaques contre les services de santé" => "12:10",
-  "Femmes allaitantes et orpaillage" => "12:20"
+  "Femmes allaitantes et orpaillage" => "12:10"
 }
-abort "The final three health talks must take place before lunch." unless final_pre_lunch_times.all? do |title, time|
+abort "The final health talks must take place before lunch." unless final_pre_lunch_times.all? do |title, time|
   day2_slots.any? { |slot| slot["name"].start_with?(title) && slot["time_start"] == time }
 end
-abort "The final discussion must run from 12:30 to 12:45." unless day2_slots.any? { |slot| slot["name"] == discussion_name && slot["time_start"] == "12:30" && slot["time_end"] == "12:45" }
+abort "The final discussion must run from 12:20 to 12:35." unless day2_slots.any? { |slot| slot["name"] == discussion_name && slot["time_start"] == "12:20" && slot["time_end"] == "12:35" }
 abort "Scientific synthesis must be removed from the schedule." if day2_slots.any? { |slot| slot["name"] == "Synthèse scientifique des deux journées" }
 abort "Thursday schedule must finish after lunch at 14:00." unless day2_slots.map { |slot| slot["time_end"] }.max == "14:00"
 

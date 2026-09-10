@@ -132,7 +132,7 @@ days:
     - name: Pause-Café
       time_start: '09:55'
       time_end: '10:25'
-    - name: 'Conflits communautaires et vulnérabilités des personnes déplacées internes au Mali : étude qualitative du camp de Faladié dans le District de Bamako'
+    - name: 'Attaques contre les services de santé dans quatre pays d''Afrique subsaharienne de 2016 à 2026 : tendances, caractéristiques et conséquences pour la sécurité des systèmes de santé'
       time_start: '10:35'
       time_end: '10:45'
     - name: 'Violence contre les travailleurs humanitaires en Afrique subsaharienne (1997-2026) : tendances, profils de risque et implications pour l''accès humanitaire'
@@ -150,18 +150,15 @@ days:
     - name: 'Environnement de vie et état de santé des déplacés internes à Bamako : cas des déplacés à Faladjè.'
       time_start: '12:00'
       time_end: '12:10'
-    - name: 'Attaques contre les services de santé dans quatre pays d''Afrique subsaharienne de 2016 à 2026 : tendances, caractéristiques et conséquences pour la sécurité des systèmes de santé'
+    - name: 'Femmes allaitantes et orpaillage au Sud-ouest du Mali : Cas des sites de Bokoro et Dacko, cercle de Sélingué'
       time_start: '12:10'
       time_end: '12:20'
-    - name: 'Femmes allaitantes et orpaillage au Sud-ouest du Mali : Cas des sites de Bokoro et Dacko, cercle de Sélingué'
-      time_start: '12:20'
-      time_end: '12:30'
     - name: Discussion collective et questions
-      time_start: '12:30'
-      time_end: '12:45'
+      time_start: '12:20'
+      time_end: '12:35'
     - name: Synthèse des travaux et clôture
-      time_start: '12:45'
-      time_end: '13:00'
+      time_start: '12:35'
+      time_end: '12:50'
     - name: Pause déjeuner
       time_start: '13:00'
       time_end: '14:00'

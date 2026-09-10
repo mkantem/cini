@@ -5,7 +5,7 @@ require "yaml"
 require "date"
 
 ROOT = File.expand_path("..", __dir__)
-EXPECTED_TALKS = 28
+EXPECTED_TALKS = 27
 EXPECTED_SPEAKERS = 47
 REMOVED_PAPER_IDS = %w[1 2 4 5 6 11 14 16 17 27].freeze
 REMOVED_SPEAKERS = [
